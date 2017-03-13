@@ -10584,6 +10584,22 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP12" library="testpad" deviceset="PTR1" device="TP09R"/>
 <part name="TP13" library="testpad" deviceset="PTR1" device="TP09R"/>
 <part name="TP14" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP15" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP16" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP17" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP18" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP19" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP20" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP21" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP22" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP23" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP24" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP25" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP26" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP27" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP28" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP29" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="TP30" library="testpad" deviceset="PTR1" device="TP09R"/>
 </parts>
 <sheets>
 <sheet>
@@ -10625,6 +10641,8 @@ excluding deployment</text>
 <instance part="FID2" gate="G$1" x="200.66" y="45.72"/>
 <instance part="FID3" gate="G$1" x="198.12" y="43.18"/>
 <instance part="FID4" gate="G$1" x="200.66" y="43.18"/>
+<instance part="TP15" gate="G$1" x="142.24" y="134.62" rot="R270"/>
+<instance part="TP16" gate="G$1" x="142.24" y="132.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -10683,7 +10701,7 @@ excluding deployment</text>
 <label x="86.36" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="3V3_RADIO" class="0">
+<net name="5V_RX_RADIO" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="51"/>
 <wire x1="66.04" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
@@ -10817,8 +10835,11 @@ excluding deployment</text>
 <net name="3V3_SYS" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="27"/>
-<wire x1="180.34" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
 <label x="175.26" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="TP16" gate="G$1" pin="TP"/>
+<wire x1="180.34" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="28"/>
@@ -10829,8 +10850,9 @@ excluding deployment</text>
 <net name="5V_SYS" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="25"/>
-<wire x1="180.34" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
 <label x="175.26" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="TP15" gate="G$1" pin="TP"/>
+<wire x1="144.78" y1="134.62" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="26"/>
@@ -12306,6 +12328,9 @@ for INA214</text>
 <attribute name="NAME" x="222.504" y="132.461" size="1.778" layer="95"/>
 <attribute name="VALUE" x="222.504" y="129.921" size="1.778" layer="96"/>
 </instance>
+<instance part="TP17" gate="G$1" x="129.54" y="157.48" rot="R90"/>
+<instance part="TP18" gate="G$1" x="129.54" y="104.14" rot="R90"/>
+<instance part="TP19" gate="G$1" x="213.36" y="157.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -12427,6 +12452,8 @@ for INA214</text>
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="127" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="127" y1="154.94" x2="127" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="TP17" gate="G$1" pin="TP"/>
+<junction x="127" y="157.48"/>
 </segment>
 </net>
 <net name="UVP3V3_VSENSE" class="0">
@@ -12450,6 +12477,8 @@ for INA214</text>
 <pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="127" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="127" y1="101.6" x2="127" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="TP18" gate="G$1" pin="TP"/>
+<junction x="127" y="104.14"/>
 </segment>
 </net>
 <net name="UVP5V_VSENSE" class="0">
@@ -12534,6 +12563,8 @@ for INA214</text>
 <pinref part="R37" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="157.48" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="154.94" x2="210.82" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="TP19" gate="G$1" pin="TP"/>
+<junction x="210.82" y="157.48"/>
 </segment>
 </net>
 </nets>
@@ -12931,6 +12962,7 @@ OCP1</text>
 <instance part="GND43" gate="1" x="215.9" y="91.44"/>
 <instance part="TP11" gate="G$1" x="55.88" y="81.28" rot="R90"/>
 <instance part="TP12" gate="G$1" x="55.88" y="96.52" rot="R90"/>
+<instance part="TP27" gate="G$1" x="215.9" y="127" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13088,11 +13120,6 @@ OCP1</text>
 <junction x="40.64" y="104.14"/>
 </segment>
 <segment>
-<pinref part="C40" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="50.8" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
-<label x="238.76" y="53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U14" gate="G$1" pin="V+"/>
 <wire x1="66.04" y1="147.32" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="149.86" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
@@ -13171,12 +13198,7 @@ OCP1</text>
 <segment>
 <pinref part="U17" gate="A" pin="D"/>
 <label x="195.58" y="157.48" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="195.58" y1="142.24" x2="195.58" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="R44" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="149.86" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="147.32" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="149.86" x2="195.58" y2="149.86" width="0.1524" layer="91"/>
-<junction x="195.58" y="149.86"/>
+<wire x1="195.58" y1="142.24" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OCP1_MCU_EN" class="0">
@@ -13222,6 +13244,7 @@ OCP1</text>
 <pinref part="C42" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="104.14" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
 <junction x="215.9" y="124.46"/>
+<pinref part="TP27" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="OCP1_GATE" class="0">
@@ -13279,6 +13302,18 @@ OCP1</text>
 <wire x1="38.1" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
 <junction x="30.48" y="157.48"/>
 <label x="20.32" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="50.8" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
+<label x="238.76" y="53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="VBATT" class="0">
+<segment>
+<pinref part="R44" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="147.32" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
+<label x="170.18" y="149.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -13412,6 +13447,7 @@ OCP2</text>
 <instance part="GND51" gate="1" x="220.98" y="93.98"/>
 <instance part="TP9" gate="G$1" x="55.88" y="76.2" rot="R90"/>
 <instance part="TP10" gate="G$1" x="55.88" y="91.44" rot="R90"/>
+<instance part="TP26" gate="G$1" x="220.98" y="129.54" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13569,11 +13605,6 @@ OCP2</text>
 <junction x="40.64" y="99.06"/>
 </segment>
 <segment>
-<pinref part="C51" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="48.26" x2="241.3" y2="50.8" width="0.1524" layer="91"/>
-<label x="241.3" y="50.8" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U19" gate="G$1" pin="V+"/>
 <wire x1="66.04" y1="142.24" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="144.78" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
@@ -13653,10 +13684,7 @@ OCP2</text>
 <pinref part="U22" gate="A" pin="D"/>
 <label x="200.66" y="149.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 <wire x1="200.66" y1="157.48" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R53" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="152.4" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="149.86" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="152.4" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="152.4" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
 <junction x="200.66" y="152.4"/>
 </segment>
@@ -13749,6 +13777,7 @@ OCP2</text>
 <pinref part="C53" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="106.68" x2="220.98" y2="127" width="0.1524" layer="91"/>
 <junction x="220.98" y="127"/>
+<pinref part="TP26" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="UVP5V_OUT" class="0">
@@ -13761,6 +13790,18 @@ OCP2</text>
 <wire x1="35.56" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
 <junction x="35.56" y="152.4"/>
 <label x="30.48" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C51" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="48.26" x2="241.3" y2="50.8" width="0.1524" layer="91"/>
+<label x="241.3" y="50.8" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="VBATT" class="0">
+<segment>
+<pinref part="R53" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="149.86" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
+<label x="175.26" y="152.4" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -13894,6 +13935,7 @@ OCP3</text>
 <instance part="GND59" gate="1" x="220.98" y="91.44"/>
 <instance part="TP7" gate="G$1" x="55.88" y="76.2" rot="R90"/>
 <instance part="TP8" gate="G$1" x="55.88" y="91.44" rot="R90"/>
+<instance part="TP25" gate="G$1" x="220.98" y="127" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14130,8 +14172,6 @@ OCP3</text>
 <pinref part="U27" gate="A" pin="D"/>
 <label x="200.66" y="147.32" size="1.778" layer="95" rot="R90" xref="yes"/>
 <wire x1="200.66" y1="142.24" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="R62" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="147.32" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
 <junction x="200.66" y="147.32"/>
@@ -14180,6 +14220,7 @@ OCP3</text>
 <pinref part="C64" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="104.14" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
 <junction x="220.98" y="124.46"/>
+<pinref part="TP25" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="OCP3_GATE" class="0">
@@ -14242,6 +14283,13 @@ OCP3</text>
 <pinref part="R63" gate="G$1" pin="1"/>
 <pinref part="U27" gate="B" pin="D"/>
 <wire x1="175.26" y1="119.38" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBATT" class="0">
+<segment>
+<pinref part="R62" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="147.32" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
+<label x="175.26" y="152.4" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -14375,6 +14423,7 @@ OCP4</text>
 <instance part="GND67" gate="1" x="215.9" y="93.98"/>
 <instance part="TP5" gate="G$1" x="55.88" y="76.2" rot="R90"/>
 <instance part="TP6" gate="G$1" x="55.88" y="91.44" rot="R90"/>
+<instance part="TP24" gate="G$1" x="215.9" y="129.54" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14625,12 +14674,7 @@ OCP4</text>
 <segment>
 <pinref part="U32" gate="A" pin="D"/>
 <label x="193.04" y="160.02" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="193.04" y1="139.7" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="R71" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="149.86" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="144.78" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="144.78" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
-<junction x="193.04" y="144.78"/>
+<wire x1="193.04" y1="139.7" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OCP4_MCU_EN" class="0">
@@ -14676,6 +14720,7 @@ OCP4</text>
 <pinref part="C75" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="106.68" x2="215.9" y2="127" width="0.1524" layer="91"/>
 <junction x="215.9" y="127"/>
+<pinref part="TP24" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="OCP4_GATE" class="0">
@@ -14721,6 +14766,13 @@ OCP4</text>
 <pinref part="R72" gate="G$1" pin="1"/>
 <pinref part="U32" gate="B" pin="D"/>
 <wire x1="167.64" y1="116.84" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBATT" class="0">
+<segment>
+<pinref part="R71" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="144.78" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
+<label x="167.64" y="149.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -14854,6 +14906,7 @@ OCP5</text>
 <instance part="GND75" gate="1" x="220.98" y="93.98"/>
 <instance part="TP3" gate="G$1" x="55.88" y="76.2" rot="R90"/>
 <instance part="TP4" gate="G$1" x="55.88" y="91.44" rot="R90"/>
+<instance part="TP23" gate="G$1" x="223.52" y="129.54" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15104,12 +15157,7 @@ OCP5</text>
 <segment>
 <pinref part="U37" gate="A" pin="D"/>
 <label x="198.12" y="162.56" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="198.12" y1="144.78" x2="198.12" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R80" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="152.4" x2="198.12" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="149.86" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="152.4" x2="198.12" y2="152.4" width="0.1524" layer="91"/>
-<junction x="198.12" y="152.4"/>
+<wire x1="198.12" y1="144.78" x2="198.12" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OCP5_MCU_EN" class="0">
@@ -15193,6 +15241,7 @@ OCP5</text>
 <pinref part="C86" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="106.68" x2="220.98" y2="127" width="0.1524" layer="91"/>
 <junction x="220.98" y="127"/>
+<pinref part="TP23" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -15200,6 +15249,13 @@ OCP5</text>
 <pinref part="R81" gate="G$1" pin="1"/>
 <pinref part="U37" gate="B" pin="D"/>
 <wire x1="175.26" y1="121.92" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBATT" class="0">
+<segment>
+<pinref part="R80" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="149.86" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
+<label x="175.26" y="152.4" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -15325,6 +15381,7 @@ OCP6</text>
 </instance>
 <instance part="TP2" gate="G$1" x="55.88" y="91.44" rot="R90"/>
 <instance part="TP1" gate="G$1" x="55.88" y="76.2" rot="R90"/>
+<instance part="TP22" gate="G$1" x="203.2" y="152.4" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15551,12 +15608,12 @@ OCP6</text>
 <segment>
 <pinref part="U42" gate="A" pin="S"/>
 <wire x1="182.88" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
+<label x="167.64" y="149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R89" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="142.24" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
 <junction x="170.18" y="149.86"/>
-<label x="167.64" y="149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="OCP6_MCU_EN" class="0">
@@ -15638,6 +15695,7 @@ OCP6</text>
 <wire x1="203.2" y1="147.32" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="149.86" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
 <junction x="203.2" y="149.86"/>
+<pinref part="TP22" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$203" class="0">
@@ -15759,6 +15817,7 @@ OCP6</text>
 <attribute name="VALUE" x="59.69" y="80.518" size="1.778" layer="96"/>
 </instance>
 <instance part="TP13" gate="G$1" x="104.14" y="73.66"/>
+<instance part="TP21" gate="G$1" x="160.02" y="147.32" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15864,6 +15923,7 @@ OCP6</text>
 <pinref part="C103" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="142.24" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
 <junction x="160.02" y="144.78"/>
+<pinref part="TP21" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="R97" gate="G$1" pin="2"/>
@@ -16110,6 +16170,7 @@ OCP6</text>
 <attribute name="VALUE" x="59.69" y="77.978" size="1.778" layer="96"/>
 </instance>
 <instance part="TP14" gate="G$1" x="104.14" y="71.12"/>
+<instance part="TP20" gate="G$1" x="157.48" y="144.78" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -16324,6 +16385,7 @@ OCP6</text>
 <pinref part="C110" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="139.7" x2="157.48" y2="142.24" width="0.1524" layer="91"/>
 <junction x="157.48" y="142.24"/>
+<pinref part="TP20" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="U48" gate="A" pin="S"/>
@@ -17008,6 +17070,9 @@ and Multiplexer</text>
 <attribute name="VALUE" x="71.12" y="92.71" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND106" gate="1" x="96.52" y="43.18"/>
+<instance part="TP28" gate="G$1" x="198.12" y="144.78" rot="R180"/>
+<instance part="TP29" gate="G$1" x="198.12" y="104.14"/>
+<instance part="TP30" gate="G$1" x="200.66" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17234,6 +17299,7 @@ and Multiplexer</text>
 <junction x="121.92" y="106.68"/>
 <junction x="81.28" y="106.68"/>
 <wire x1="121.92" y1="127" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="TP29" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17269,6 +17335,8 @@ and Multiplexer</text>
 <pinref part="U52" gate="G$1" pin="VCTRL"/>
 <wire x1="121.92" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="68.58" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="TP30" gate="G$1" pin="TP"/>
+<junction x="198.12" y="48.26"/>
 </segment>
 </net>
 <net name="CHARGE_IN" class="0">
@@ -17284,6 +17352,7 @@ and Multiplexer</text>
 <label x="203.2" y="142.24" size="1.778" layer="95" xref="yes"/>
 <junction x="180.34" y="142.24"/>
 <junction x="198.12" y="142.24"/>
+<pinref part="TP28" gate="G$1" pin="TP"/>
 </segment>
 </net>
 </nets>
