@@ -10670,13 +10670,27 @@ excluding deployment</text>
 <text x="139.7" y="68.58" size="1.778" layer="91">review all these connections</text>
 <text x="104.14" y="38.1" size="1.778" layer="91">review all these connections</text>
 <text x="58.42" y="20.32" size="1.778" layer="91">review all these connections</text>
-<text x="220.98" y="157.48" size="1.778" layer="91">&lt; WHY?</text>
-<text x="218.44" y="147.32" size="1.778" layer="91">&lt; WHY?</text>
-<text x="220.98" y="144.78" size="1.778" layer="91">&lt; WHY?</text>
-<text x="220.98" y="154.94" size="1.778" layer="91">&lt; WHY?</text>
-<text x="157.48" y="157.48" size="1.778" layer="91">&lt; WHY?</text>
-<text x="157.48" y="147.32" size="1.778" layer="91">&lt; WHY?</text>
+<text x="220.98" y="157.48" size="1.778" layer="91">top pv 1 -</text>
+<text x="220.98" y="147.32" size="1.778" layer="91">east pv 1 -</text>
+<text x="220.98" y="144.78" size="1.778" layer="91">east pv 2 +</text>
+<text x="220.98" y="154.94" size="1.778" layer="91">top pv 2 +</text>
 <text x="35.56" y="25.4" size="1.778" layer="91" rot="R180">wire thse SWD pins</text>
+<text x="144.78" y="157.48" size="1.778" layer="91">top pv 1 +</text>
+<text x="144.78" y="154.94" size="1.778" layer="91">top pv 2 -</text>
+<text x="144.78" y="147.32" size="1.778" layer="91">east pv 1 +</text>
+<text x="144.78" y="144.78" size="1.778" layer="91">east pv 2 -</text>
+<text x="35.56" y="73.66" size="1.778" layer="91">1 +</text>
+<text x="35.56" y="71.12" size="1.778" layer="91">1 -</text>
+<text x="35.56" y="66.04" size="1.778" layer="91">2 +</text>
+<text x="35.56" y="68.58" size="1.778" layer="91">2 -</text>
+<text x="109.22" y="73.66" size="1.778" layer="91">1 +</text>
+<text x="109.22" y="71.12" size="1.778" layer="91">1 -</text>
+<text x="109.22" y="66.04" size="1.778" layer="91">2 +</text>
+<text x="109.22" y="68.58" size="1.778" layer="91">2 -</text>
+<text x="76.2" y="33.02" size="1.778" layer="91">1 +</text>
+<text x="76.2" y="30.48" size="1.778" layer="91">1 -</text>
+<text x="76.2" y="25.4" size="1.778" layer="91">2 +</text>
+<text x="76.2" y="27.94" size="1.778" layer="91">2 -</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="73.66" y="134.62" smashed="yes" rot="MR180">
@@ -10791,16 +10805,6 @@ excluding deployment</text>
 </net>
 <net name="MPPT1_MID" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="8"/>
-<wire x1="195.58" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
-<label x="200.66" y="157.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J9" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
-<label x="132.08" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J8" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
 <label x="60.96" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -10809,11 +10813,6 @@ excluding deployment</text>
 <pinref part="J6" gate="G$1" pin="6"/>
 <wire x1="99.06" y1="30.48" x2="93.98" y2="30.48" width="0.1524" layer="91"/>
 <label x="93.98" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="16"/>
-<wire x1="195.58" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
-<label x="200.66" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FLIGHT_MCU_SWCLK" class="0">
@@ -11141,6 +11140,25 @@ excluding deployment</text>
 <pinref part="J2" gate="G$1" pin="20"/>
 <wire x1="195.58" y1="142.24" x2="200.66" y2="142.24" width="0.1524" layer="91"/>
 <label x="200.66" y="142.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT2_MID" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+<label x="132.08" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="16"/>
+<wire x1="195.58" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
+<label x="200.66" y="147.32" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT3_MID" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="8"/>
+<wire x1="195.58" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
+<label x="200.66" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -11717,48 +11735,6 @@ for INA214</text>
 <pinref part="U3" gate="G$1" pin="OUT"/>
 </segment>
 </net>
-<net name="MPPT1_PV_P" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="IN-"/>
-<wire x1="53.34" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="132.08" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="152.4" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="152.4" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
-<junction x="50.8" y="152.4"/>
-<label x="91.44" y="152.4" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="IN-"/>
-<wire x1="175.26" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="132.08" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="152.4" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
-<junction x="172.72" y="152.4"/>
-<label x="213.36" y="152.4" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="IN-"/>
-<wire x1="55.88" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="58.42" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
-<junction x="53.34" y="78.74"/>
-<label x="91.44" y="78.74" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U6" gate="G$1" pin="IN-"/>
-<wire x1="175.26" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="58.42" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="78.74" x2="213.36" y2="78.74" width="0.1524" layer="91"/>
-<junction x="172.72" y="78.74"/>
-<label x="213.36" y="78.74" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="PV_TOP1_CSENSE_MUX" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -11873,6 +11849,52 @@ for INA214</text>
 <wire x1="157.48" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
 <junction x="157.48" y="78.74"/>
 <label x="154.94" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT1H_PV_P" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="IN-"/>
+<wire x1="55.88" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="58.42" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<junction x="53.34" y="78.74"/>
+<label x="91.44" y="78.74" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="IN-"/>
+<wire x1="175.26" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="132.08" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="152.4" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
+<junction x="172.72" y="152.4"/>
+<label x="213.36" y="152.4" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT2H_PV_P" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="IN-"/>
+<wire x1="175.26" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="58.42" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="78.74" x2="213.36" y2="78.74" width="0.1524" layer="91"/>
+<junction x="172.72" y="78.74"/>
+<label x="213.36" y="78.74" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT3H_PV_P" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="IN-"/>
+<wire x1="53.34" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="132.08" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="152.4" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="152.4" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
+<junction x="50.8" y="152.4"/>
+<label x="91.44" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -12130,48 +12152,6 @@ for INA214</text>
 <wire x1="86.36" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MPPT2_PV_P" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="IN-"/>
-<wire x1="53.34" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="134.62" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="154.94" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
-<junction x="50.8" y="154.94"/>
-<label x="91.44" y="154.94" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U10" gate="G$1" pin="IN-"/>
-<wire x1="175.26" y1="134.62" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="134.62" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="154.94" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
-<junction x="172.72" y="154.94"/>
-<label x="223.52" y="154.94" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U9" gate="G$1" pin="IN-"/>
-<wire x1="55.88" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="58.42" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
-<junction x="53.34" y="78.74"/>
-<label x="93.98" y="78.74" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U11" gate="G$1" pin="IN-"/>
-<wire x1="177.8" y1="58.42" x2="175.26" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="58.42" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="78.74" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
-<junction x="175.26" y="78.74"/>
-<label x="226.06" y="78.74" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="PV_TOP2_CSENSE_MUX" class="0">
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
@@ -12245,18 +12225,6 @@ for INA214</text>
 <junction x="88.9" y="43.18"/>
 </segment>
 </net>
-<net name="PV_NORTH2_P" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="IN+"/>
-<wire x1="55.88" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="53.34" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
-<junction x="38.1" y="78.74"/>
-<label x="33.02" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$682" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
@@ -12286,6 +12254,64 @@ for INA214</text>
 <wire x1="160.02" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
 <junction x="160.02" y="78.74"/>
 <label x="157.48" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT1L_PV_P" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="IN-"/>
+<wire x1="55.88" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="58.42" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
+<junction x="53.34" y="78.74"/>
+<label x="93.98" y="78.74" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U10" gate="G$1" pin="IN-"/>
+<wire x1="175.26" y1="134.62" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="134.62" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="154.94" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
+<junction x="172.72" y="154.94"/>
+<label x="223.52" y="154.94" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT2L_PV_P" class="0">
+<segment>
+<pinref part="U11" gate="G$1" pin="IN-"/>
+<wire x1="177.8" y1="58.42" x2="175.26" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="58.42" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="78.74" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
+<junction x="175.26" y="78.74"/>
+<label x="226.06" y="78.74" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT3L_PV_P" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="IN-"/>
+<wire x1="53.34" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="134.62" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="154.94" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
+<junction x="50.8" y="154.94"/>
+<label x="91.44" y="154.94" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PV_NORTH2_P" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="IN+"/>
+<wire x1="55.88" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="53.34" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
+<junction x="38.1" y="78.74"/>
+<label x="33.02" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -12812,18 +12838,6 @@ panel current senses</text>
 <junction x="200.66" y="91.44"/>
 </segment>
 </net>
-<net name="MPPT1_PV_P" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="IN-"/>
-<wire x1="58.42" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="132.08" x2="55.88" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="152.4" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
-<junction x="55.88" y="152.4"/>
-<label x="96.52" y="152.4" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$607" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
@@ -12855,18 +12869,6 @@ panel current senses</text>
 <label x="35.56" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MPPT2_PV_P" class="0">
-<segment>
-<pinref part="U12" gate="G$1" pin="IN-"/>
-<wire x1="58.42" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="55.88" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
-<junction x="55.88" y="76.2"/>
-<label x="96.52" y="76.2" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$719" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -12896,6 +12898,30 @@ panel current senses</text>
 <wire x1="40.64" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 <junction x="40.64" y="76.2"/>
 <label x="35.56" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT2H_PV_P" class="0">
+<segment>
+<pinref part="U7" gate="G$1" pin="IN-"/>
+<wire x1="58.42" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="132.08" x2="55.88" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="152.4" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
+<junction x="55.88" y="152.4"/>
+<label x="96.52" y="152.4" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MPPT2L_PV_P" class="0">
+<segment>
+<pinref part="U12" gate="G$1" pin="IN-"/>
+<wire x1="58.42" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="55.88" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
+<junction x="55.88" y="76.2"/>
+<label x="96.52" y="76.2" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -17043,6 +17069,13 @@ and Multiplexer</text>
 <text x="426.72" y="104.14" size="1.778" layer="91">MPPT 3L</text>
 <text x="426.72" y="142.24" size="1.778" layer="91">MPPT 3H</text>
 <text x="170.18" y="58.42" size="1.778" layer="91">MPPT 2H</text>
+<text x="10.16" y="157.48" size="1.778" layer="91">north/south</text>
+<text x="10.16" y="132.08" size="1.778" layer="91">north/south</text>
+<text x="12.7" y="116.84" size="1.778" layer="91">north/south</text>
+<text x="15.24" y="76.2" size="1.778" layer="91">east/west</text>
+<text x="12.7" y="43.18" size="1.778" layer="91">east/west</text>
+<text x="276.86" y="167.64" size="1.778" layer="91">top</text>
+<text x="274.32" y="124.46" size="1.778" layer="91">top</text>
 </plain>
 <instances>
 <instance part="U51" gate="G$1" x="83.82" y="147.32" smashed="yes">
