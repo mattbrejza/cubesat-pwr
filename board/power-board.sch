@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10433,13 +10434,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R19" library="rcl" deviceset="R-EU_" device="R1206" value="43m"/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="309k"/>
-<part name="R30" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="C27" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="J7" library="con-hirose-df13" deviceset="DF13-10P-1.25" device="DS"/>
 <part name="J6" library="con-hirose-df13" deviceset="DF13-8P-1.25" device="DS"/>
 <part name="GND105" library="supply1" deviceset="GND" device=""/>
@@ -12319,8 +12316,8 @@ for INA214</text>
 <sheet>
 <description>Voltage Measurements</description>
 <plain>
-<text x="27.94" y="162.56" size="2.54" layer="97">MPPT1 Solar Panel Voltage</text>
-<text x="27.94" y="109.22" size="2.54" layer="97">MPPT2 Solar Panel Voltage</text>
+<text x="27.94" y="162.56" size="2.54" layer="97">MPPT2 Lower Solar Panel Voltage</text>
+<text x="27.94" y="109.22" size="2.54" layer="97">MPPT2 Mid-point Voltage</text>
 <text x="109.22" y="109.22" size="2.54" layer="97">Regulated 5V After UVP Switch</text>
 <text x="109.22" y="162.56" size="2.54" layer="97">Regulated 3V3 After UVP Switch</text>
 <text x="27.94" y="50.8" size="2.54" layer="97">MPPT2 Output Voltage</text>
@@ -12382,19 +12379,6 @@ for INA214</text>
 <attribute name="VALUE" x="138.684" y="76.581" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
-<instance part="R29" gate="G$1" x="40.64" y="38.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.75" y="39.5986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="31.75" y="37.338" size="1.778" layer="96"/>
-</instance>
-<instance part="R30" gate="G$1" x="40.64" y="22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.75" y="24.3586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="31.75" y="22.098" size="1.778" layer="96"/>
-</instance>
-<instance part="GND31" gate="1" x="40.64" y="12.7"/>
-<instance part="C27" gate="G$1" x="48.26" y="22.86" smashed="yes">
-<attribute name="NAME" x="52.324" y="20.701" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.324" y="18.161" size="1.778" layer="96"/>
-</instance>
 <instance part="R31" gate="G$1" x="127" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="118.11" y="39.5986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="118.11" y="37.338" size="1.778" layer="96"/>
@@ -12466,15 +12450,6 @@ for INA214</text>
 <junction x="127" y="73.66"/>
 </segment>
 <segment>
-<pinref part="GND31" gate="1" pin="GND"/>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="15.24" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="17.78" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
-<junction x="40.64" y="15.24"/>
-</segment>
-<segment>
 <pinref part="GND32" gate="1" pin="GND"/>
 <pinref part="R32" gate="G$1" pin="1"/>
 <wire x1="127" y1="15.24" x2="127" y2="17.78" width="0.1524" layer="91"/>
@@ -12493,15 +12468,7 @@ for INA214</text>
 <junction x="210.82" y="127"/>
 </segment>
 </net>
-<net name="MPPT1_PV_P" class="0">
-<segment>
-<label x="38.1" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="154.94" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MPPT1_PV_VSENSE" class="0">
+<net name="MPPT2_LOWER_PV_VSENSE" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
 <pinref part="R25" gate="G$1" pin="1"/>
@@ -12516,15 +12483,21 @@ for INA214</text>
 <junction x="48.26" y="142.24"/>
 </segment>
 </net>
-<net name="MPPT2_PV_P" class="0">
+<net name="MPPT2L_PV_P" class="0">
 <segment>
 <label x="38.1" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="101.6" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<label x="38.1" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="154.94" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="MPPT2_PV_VSENSE" class="0">
+<net name="MPPT2_MID_PV_VSENSE" class="0">
 <segment>
 <pinref part="R28" gate="G$1" pin="2"/>
 <pinref part="R27" gate="G$1" pin="1"/>
@@ -12587,29 +12560,6 @@ for INA214</text>
 <wire x1="134.62" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="83.82" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
 <junction x="134.62" y="88.9"/>
-</segment>
-</net>
-<net name="MPPT1_MID" class="0">
-<segment>
-<label x="38.1" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="45.72" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="43.18" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MPPT2_OUT_VSENSE" class="0">
-<segment>
-<pinref part="R30" gate="G$1" pin="2"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="27.94" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="30.48" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
-<label x="53.34" y="30.48" size="1.778" layer="95" xref="yes"/>
-<junction x="40.64" y="30.48"/>
-<pinref part="C27" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="25.4" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
-<junction x="48.26" y="30.48"/>
 </segment>
 </net>
 <net name="CHARGE_IN" class="0">
@@ -16992,14 +16942,14 @@ and Multiplexer</text>
 <wire x1="198.12" y1="160.02" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MPPT1_PV_VSENSE" class="0">
+<net name="MPPT2_LOWER_PV_VSENSE" class="0">
 <segment>
 <label x="198.12" y="106.68" size="1.27" layer="95" xref="yes"/>
 <pinref part="U50" gate="A" pin="S22"/>
 <wire x1="198.12" y1="106.68" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MPPT2_PV_VSENSE" class="0">
+<net name="MPPT2_MID_PV_VSENSE" class="0">
 <segment>
 <label x="198.12" y="104.14" size="1.27" layer="95" xref="yes"/>
 <pinref part="U50" gate="A" pin="S23"/>
