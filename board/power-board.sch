@@ -10594,9 +10594,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP25" library="testpad" deviceset="PTR1" device="TP09R"/>
 <part name="TP26" library="testpad" deviceset="PTR1" device="TP09R"/>
 <part name="TP27" library="testpad" deviceset="PTR1" device="TP09R"/>
-<part name="TP28" library="testpad" deviceset="PTR1" device="TP09R"/>
 <part name="TP29" library="testpad" deviceset="PTR1" device="TP09R"/>
-<part name="TP30" library="testpad" deviceset="PTR1" device="TP09R"/>
 <part name="U55" library="gdp_pss_library" deviceset="SPV1040" device="T"/>
 <part name="C143" library="rcl" deviceset="C-EU" device="C0603K" value="1u"/>
 <part name="R118" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
@@ -10650,9 +10648,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="D15" library="diode" deviceset="SUPPRESSOR-" device="SMBJ" value="5V1"/>
 <part name="L9" library="gdp_pss_library" deviceset="MSS7341" device="" value="10uH"/>
 <part name="GND130" library="supply1" deviceset="GND" device=""/>
-<part name="TP34" library="testpad" deviceset="PTR1" device="TP09R"/>
 <part name="TP35" library="testpad" deviceset="PTR1" device="TP09R"/>
-<part name="TP36" library="testpad" deviceset="PTR1" device="TP09R"/>
 </parts>
 <sheets>
 <sheet>
@@ -12485,12 +12481,6 @@ for INA214</text>
 </net>
 <net name="MPPT2L_PV_P" class="0">
 <segment>
-<label x="38.1" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="101.6" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <label x="38.1" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
@@ -12608,6 +12598,14 @@ for INA214</text>
 <wire x1="210.82" y1="154.94" x2="210.82" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="TP19" gate="G$1" pin="TP"/>
 <junction x="210.82" y="157.48"/>
+</segment>
+</net>
+<net name="MPPT2_MID" class="0">
+<segment>
+<label x="38.1" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="101.6" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -17126,9 +17124,7 @@ and Multiplexer</text>
 <attribute name="VALUE" x="55.88" y="125.73" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND106" gate="1" x="76.2" y="88.9"/>
-<instance part="TP28" gate="G$1" x="152.4" y="160.02" rot="R180"/>
 <instance part="TP29" gate="G$1" x="152.4" y="132.08" rot="R180"/>
-<instance part="TP30" gate="G$1" x="152.4" y="91.44" rot="R90"/>
 <instance part="U55" gate="G$1" x="83.82" y="66.04" smashed="yes">
 <attribute name="NAME" x="73.66" y="55.88" size="1.778" layer="95"/>
 <attribute name="VALUE" x="73.66" y="53.34" size="1.778" layer="96"/>
@@ -17326,9 +17322,7 @@ and Multiplexer</text>
 <attribute name="VALUE" x="309.88" y="125.73" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND130" gate="1" x="330.2" y="88.9"/>
-<instance part="TP34" gate="G$1" x="406.4" y="160.02" rot="R180"/>
 <instance part="TP35" gate="G$1" x="406.4" y="132.08" rot="R180"/>
-<instance part="TP36" gate="G$1" x="406.4" y="91.44" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17554,8 +17548,6 @@ and Multiplexer</text>
 <pinref part="U52" gate="G$1" pin="VCTRL"/>
 <wire x1="101.6" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="101.6" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="TP30" gate="G$1" pin="TP"/>
-<junction x="149.86" y="91.44"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
@@ -17620,8 +17612,6 @@ and Multiplexer</text>
 <pinref part="U58" gate="G$1" pin="VCTRL"/>
 <wire x1="355.6" y1="101.6" x2="353.06" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="101.6" x2="355.6" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="TP36" gate="G$1" pin="TP"/>
-<junction x="403.86" y="91.44"/>
 </segment>
 </net>
 <net name="CHARGE_IN" class="0">
@@ -17637,7 +17627,6 @@ and Multiplexer</text>
 <label x="160.02" y="157.48" size="1.778" layer="95" xref="yes"/>
 <junction x="147.32" y="157.48"/>
 <junction x="152.4" y="157.48"/>
-<pinref part="TP28" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="R119" gate="G$1" pin="1"/>
@@ -17665,7 +17654,6 @@ and Multiplexer</text>
 <label x="414.02" y="157.48" size="1.778" layer="95" xref="yes"/>
 <junction x="401.32" y="157.48"/>
 <junction x="406.4" y="157.48"/>
-<pinref part="TP34" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$89" class="0">

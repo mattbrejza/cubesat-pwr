@@ -9,7 +9,7 @@
 </settings>
 <grid distance="24" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="12" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="5" fill="5" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -281,9 +281,7 @@
 <wire x1="58.5216" y1="9.9568" x2="78.6384" y2="9.9568" width="0.127" layer="22"/>
 <wire x1="78.6384" y1="9.906" x2="81.534" y2="9.906" width="0.127" layer="22"/>
 <wire x1="81.534" y1="9.906" x2="81.534" y2="11.684" width="0.127" layer="22"/>
-<text x="-10.922" y="34.3916" size="1.4224" layer="21" ratio="12">MPPT2</text>
-<text x="-10.668" y="44.5008" size="1.4224" layer="21" ratio="12">MPPT1</text>
-<text x="3.4544" y="69.2404" size="1.4224" layer="21" ratio="12" rot="R90">CHARGER</text>
+<text x="1.6256" y="66.1924" size="1.27" layer="21" font="vector" ratio="12" rot="R90">CHARGER</text>
 <text x="48.6156" y="19.6596" size="1.4224" layer="21" ratio="12" rot="R90">MUX</text>
 <text x="49.1744" y="39.3192" size="1.4224" layer="21" ratio="12">MCU</text>
 <text x="65.3796" y="57.912" size="1.778" layer="21" ratio="12" rot="R90">5V</text>
@@ -294,7 +292,6 @@ Adrian Wheeldon
 Reece Williams
 James Boyle
 Josh Oldfield</text>
-<text x="59.7408" y="-1.2192" size="1.4224" layer="22" ratio="12" rot="MR180">S2C</text>
 <wire x1="71.3232" y1="19.304" x2="81.4832" y2="19.304" width="0.127" layer="21"/>
 <wire x1="81.4832" y1="19.304" x2="81.4832" y2="30.8864" width="0.127" layer="21"/>
 <wire x1="81.4832" y1="30.8864" x2="71.3232" y2="30.8864" width="0.127" layer="21"/>
@@ -307,14 +304,8 @@ CURRENT</text>
 <wire x1="71.3232" y1="42.8752" x2="71.3232" y2="32.1056" width="0.127" layer="21"/>
 <text x="70.9168" y="32.9184" size="1.4224" layer="21" ratio="12" rot="R90">5V_SYS
 CURRENT</text>
-<text x="46.1264" y="3.8608" size="1.4224" layer="22" ratio="12" rot="MR0">W2C</text>
-<wire x1="3.048" y1="47.5488" x2="12.3952" y2="47.5488" width="0.127" layer="22"/>
-<wire x1="12.3952" y1="47.5488" x2="12.3952" y2="36.1696" width="0.127" layer="22"/>
-<wire x1="12.3952" y1="36.1696" x2="6.7056" y2="36.1696" width="0.127" layer="22"/>
-<text x="26.416" y="1.6256" size="1.4224" layer="22" ratio="12" rot="MR180">W1C</text>
-<text x="26.8224" y="83.7184" size="1.4224" layer="22" ratio="12" rot="MR0">CHARGE
+<text x="20.1168" y="80.6704" size="1.016" layer="22" font="vector" ratio="14" rot="MR0">CHARGE
 CURRENT</text>
-<text x="37.7952" y="72.136" size="1.4224" layer="22" ratio="12" rot="MR0">N1C</text>
 <wire x1="59.5376" y1="70.7136" x2="72.7456" y2="70.7136" width="0.127" layer="22"/>
 <wire x1="72.7456" y1="70.7136" x2="72.7456" y2="72.3392" width="0.127" layer="22"/>
 <wire x1="72.7456" y1="72.3392" x2="72.7456" y2="79.0448" width="0.127" layer="22"/>
@@ -327,11 +318,8 @@ CURRENT</text>
 <wire x1="82.7024" y1="87.5792" x2="82.7024" y2="77.6224" width="0.127" layer="22"/>
 <wire x1="81.4832" y1="72.3392" x2="72.7456" y2="72.3392" width="0.127" layer="22"/>
 <text x="79.248" y="85.344" size="1.4224" layer="22" ratio="12" rot="MR0">T2C</text>
-<text x="54.0512" y="-4.2672" size="1.4224" layer="22" ratio="12" rot="MR0">S1C</text>
 <wire x1="78.6384" y1="9.9568" x2="78.6384" y2="9.906" width="0.127" layer="22"/>
-<text x="73.152" y="-2.032" size="1.4224" layer="22" ratio="12" rot="MR0">E2C</text>
 <wire x1="90.8304" y1="0" x2="90.8304" y2="11.3792" width="0.127" layer="22"/>
-<text x="82.0928" y="-2.8448" size="1.4224" layer="22" ratio="12" rot="MR0">E1C</text>
 <text x="62.1792" y="13.6144" size="0.8128" layer="21" ratio="12" rot="R90">VBATT</text>
 <wire x1="54.4576" y1="12.5984" x2="62.992" y2="12.5984" width="0.127" layer="21"/>
 <wire x1="62.992" y1="12.5984" x2="62.992" y2="19.9136" width="0.127" layer="21"/>
@@ -346,16 +334,10 @@ CURRENT</text>
 <wire x1="73.7616" y1="14.6304" x2="81.6864" y2="14.6304" width="0.127" layer="21"/>
 <wire x1="81.6864" y1="14.6304" x2="81.6864" y2="6.2992" width="0.127" layer="21"/>
 <wire x1="81.6864" y1="6.2992" x2="73.7616" y2="6.2992" width="0.127" layer="21"/>
-<text x="4.4704" y="27.2288" size="1.4224" layer="22" ratio="12" rot="MR270">MPPT2_OUT</text>
-<wire x1="1.8288" y1="13.6144" x2="11.9888" y2="13.6144" width="0.127" layer="22"/>
-<wire x1="11.9888" y1="13.6144" x2="11.9888" y2="29.0576" width="0.127" layer="22"/>
-<wire x1="11.9888" y1="29.0576" x2="1.8288" y2="29.0576" width="0.127" layer="22"/>
-<wire x1="1.8288" y1="29.0576" x2="1.8288" y2="13.6144" width="0.127" layer="22"/>
 <text x="24.1808" y="20.5232" size="1.4224" layer="22" ratio="12" rot="MR90">MPPT1_PV_P</text>
 <wire x1="32.1056" y1="34.3408" x2="23.1648" y2="34.3408" width="0.127" layer="22"/>
 <wire x1="23.1648" y1="34.3408" x2="23.1648" y2="19.5072" width="0.127" layer="22"/>
 <wire x1="23.1648" y1="19.5072" x2="32.1056" y2="19.5072" width="0.127" layer="22"/>
-<text x="46.5328" y="-2.8448" size="1.4224" layer="22" ratio="12" rot="MR0">MPPT2_PV_P</text>
 <text x="118.6688" y="3.4544" size="1.016" layer="22" ratio="12" rot="MR0">Rev 1.1  Mar'17</text>
 <text x="54.864" y="54.864" size="0.8128" layer="25" ratio="14">!UVP</text>
 <text x="69.0372" y="72.7456" size="0.8128" layer="25" ratio="14">!UVP</text>
@@ -382,16 +364,26 @@ CURRENT</text>
 <text x="80.8736" y="14.4272" size="0.8128" layer="22" ratio="14" rot="MR270">TX</text>
 <text x="120.0912" y="7.3152" size="1.016" layer="22" ratio="10" rot="MR0">S/N</text>
 <rectangle x1="108.1024" y1="6.9088" x2="115.4176" y2="8.9408" layer="22"/>
-<text x="-3.2512" y="24.7904" size="0.8128" layer="21" ratio="13">0V</text>
-<text x="-7.3152" y="25.8064" size="0.8128" layer="21" ratio="13" align="center">CHG
-IN</text>
-<text x="-8.9408" y="21.5392" size="0.8128" layer="21" ratio="13">MPPT1</text>
-<text x="-4.4704" y="21.5392" size="0.8128" layer="21" ratio="13">MPPT2</text>
-<wire x1="-5.08" y1="23.1648" x2="-5.08" y2="21.9456" width="0.1016" layer="21"/>
-<wire x1="-5.08" y1="21.9456" x2="-4.8768" y2="21.9456" width="0.1016" layer="21"/>
-<wire x1="-5.08" y1="21.9456" x2="-5.2832" y2="21.9456" width="0.1016" layer="21"/>
-<wire x1="-7.5184" y1="23.1648" x2="-7.5184" y2="22.5552" width="0.1016" layer="21"/>
-<wire x1="-2.6416" y1="23.1648" x2="-2.6416" y2="22.5552" width="0.1016" layer="21"/>
+<text x="34.1376" y="57.912" size="1.27" layer="21" font="vector" ratio="14" rot="R90">3H</text>
+<text x="34.1376" y="49.3776" size="1.27" layer="21" font="vector" ratio="14" rot="R90">3L</text>
+<text x="34.1376" y="38.4048" size="1.27" layer="21" font="vector" ratio="14" rot="R90">1H</text>
+<text x="34.1376" y="29.2608" size="1.27" layer="21" font="vector" ratio="14" rot="R90">1L</text>
+<text x="34.1376" y="18.8976" size="1.27" layer="21" font="vector" ratio="14" rot="R90">2H</text>
+<text x="34.1376" y="8.5344" size="1.27" layer="21" font="vector" ratio="14" rot="R90">2L</text>
+<text x="16.4592" y="4.2672" size="1.016" layer="21" font="vector" ratio="14" align="bottom-center">MID</text>
+<text x="14.6304" y="3.048" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">1</text>
+<text x="16.4592" y="3.048" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">2</text>
+<text x="18.288" y="3.048" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">3</text>
+<text x="22.5552" y="3.048" size="1.016" layer="21" font="vector" ratio="14" align="center">GND</text>
+<text x="10.3632" y="3.9624" size="1.016" layer="21" font="vector" ratio="14" align="center">MPPT
+OUT</text>
+<text x="33.274" y="69.088" size="1.016" layer="21" font="vector" ratio="12">PV NORTH</text>
+<text x="35.7124" y="70.9168" size="1.016" layer="21" font="vector" ratio="12">H</text>
+<text x="37.846" y="70.9168" size="1.016" layer="21" font="vector" ratio="12">L</text>
+<text x="41.7068" y="0.508" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">PV WEST</text>
+<text x="64.8716" y="0.508" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">PV SOUTH</text>
+<text x="80.1116" y="0.508" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">PV EAST</text>
+<text x="70.358" y="79.756" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">PV TOP</text>
 </plain>
 <libraries>
 <library name="ti-tiva">
@@ -5560,8 +5552,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="D7" library="diode" package="SMBJ" value="5V1" x="22.225" y="38.2016" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.3078" y="38.8874" size="0.8128" layer="25" ratio="14" rot="R270"/>
 </element>
-<element name="L3" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.4226" y="39.9415" smashed="yes">
-<attribute name="NAME" x="25.3822" y="43.7665" size="0.8128" layer="25" ratio="14"/>
+<element name="L3" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.6512" y="39.624" smashed="yes">
+<attribute name="NAME" x="25.6108" y="43.449" size="0.8128" layer="25" ratio="14"/>
 </element>
 <element name="X1" library="gdp_pss_library" package="CC7V-T1A" value="32.768k" x="39.9415" y="41.0845" smashed="yes" rot="R180">
 <attribute name="NAME" x="39.5064" y="43.3197" size="0.8128" layer="25" ratio="14"/>
@@ -6007,11 +5999,11 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C5" library="rcl" package="C0603" value="100n" x="64.262" y="78.0415" smashed="yes" rot="MR0">
 <attribute name="NAME" x="65.9638" y="78.5495" size="0.8128" layer="26" ratio="14" rot="MR180"/>
 </element>
-<element name="R25" library="rcl" package="R0603" value="309k" x="30.48" y="31.0896" smashed="yes" rot="MR0">
-<attribute name="NAME" x="32.1818" y="31.4198" size="0.8128" layer="26" ratio="14" rot="MR180"/>
+<element name="R25" library="rcl" package="R0603" value="309k" x="30.48" y="20.1168" smashed="yes" rot="MR0">
+<attribute name="NAME" x="32.1818" y="20.447" size="0.8128" layer="26" ratio="14" rot="MR180"/>
 </element>
-<element name="R26" library="rcl" package="R0603" value="100k" x="30.48" y="29.2608" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.7274" y="28.9814" size="0.8128" layer="26" ratio="14" rot="MR0"/>
+<element name="R26" library="rcl" package="R0603" value="100k" x="30.48" y="16.4592" smashed="yes" rot="MR180">
+<attribute name="NAME" x="32.2326" y="16.7386" size="0.8128" layer="26" ratio="14" rot="MR180"/>
 </element>
 <element name="R7" library="rcl" package="R0603" value="10k" x="61.976" y="74.7776" smashed="yes" rot="MR180">
 <attribute name="NAME" x="62.4078" y="72.8726" size="0.8128" layer="26" ratio="14" rot="MR0"/>
@@ -6019,8 +6011,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C7" library="rcl" package="C0603" value="1u" x="61.976" y="76.454" smashed="yes" rot="MR180">
 <attribute name="NAME" x="61.5442" y="77.1398" size="0.8128" layer="26" ratio="14" rot="MR0"/>
 </element>
-<element name="C25" library="rcl" package="C0603" value="1u" x="30.48" y="27.432" smashed="yes" rot="MR180">
-<attribute name="NAME" x="28.7274" y="26.6446" size="0.8128" layer="26" ratio="14" rot="MR0"/>
+<element name="C25" library="rcl" package="C0603" value="1u" x="30.48" y="18.288" smashed="yes" rot="MR0">
+<attribute name="NAME" x="32.2326" y="19.0754" size="0.8128" layer="26" ratio="14" rot="MR180"/>
 </element>
 <element name="R15" library="rcl" package="R1206" value="43m" x="79.1845" y="82.113" smashed="yes" rot="MR270">
 <attribute name="NAME" x="81.7245" y="83.383" size="0.8128" layer="26" ratio="14" rot="MR270"/>
@@ -6031,11 +6023,11 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C15" library="rcl" package="C0603" value="100n" x="73.5965" y="81.28" smashed="yes" rot="MR270">
 <attribute name="NAME" x="72.7075" y="83.1342" size="0.8128" layer="26" ratio="14" rot="MR270"/>
 </element>
-<element name="R27" library="rcl" package="R0603" value="309k" x="30.48" y="20.1168" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.9814" y="19.685" size="0.8128" layer="26" ratio="14" rot="MR0"/>
+<element name="R27" library="rcl" package="R0603" value="309k" x="30.48" y="31.0896" smashed="yes" rot="MR0">
+<attribute name="NAME" x="28.9814" y="30.6578" size="0.8128" layer="26" ratio="14" rot="MR0"/>
 </element>
-<element name="R28" library="rcl" package="R0603" value="100k" x="30.48" y="18.288" smashed="yes" rot="MR180">
-<attribute name="NAME" x="29.0322" y="17.8054" size="0.8128" layer="26" ratio="14" rot="MR0"/>
+<element name="R28" library="rcl" package="R0603" value="100k" x="30.48" y="29.2608" smashed="yes" rot="MR180">
+<attribute name="NAME" x="29.0322" y="28.7782" size="0.8128" layer="26" ratio="14" rot="MR0"/>
 </element>
 <element name="R17" library="rcl" package="R0603" value="10k" x="76.9112" y="78.994" smashed="yes" rot="MR90">
 <attribute name="NAME" x="77.3938" y="77.1906" size="0.8128" layer="26" ratio="14" rot="MR270"/>
@@ -6043,8 +6035,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C17" library="rcl" package="C0603" value="1u" x="75.184" y="78.994" smashed="yes" rot="MR90">
 <attribute name="NAME" x="75.5142" y="77.1398" size="0.8128" layer="26" ratio="14" rot="MR270"/>
 </element>
-<element name="C26" library="rcl" package="C0603" value="1u" x="30.48" y="16.4592" smashed="yes" rot="MR0">
-<attribute name="NAME" x="29.0322" y="15.7734" size="0.8128" layer="26" ratio="14" rot="MR0"/>
+<element name="C26" library="rcl" package="C0603" value="1u" x="30.48" y="27.432" smashed="yes" rot="MR0">
+<attribute name="NAME" x="29.0322" y="26.7462" size="0.8128" layer="26" ratio="14" rot="MR0"/>
 </element>
 <element name="R9" library="rcl" package="R1206" value="43m" x="64.6176" y="3.048" smashed="yes" rot="MR0">
 <attribute name="NAME" x="66.4972" y="0.7112" size="0.8128" layer="26" ratio="14" rot="MR0"/>
@@ -6205,8 +6197,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="U4" library="gdp_pss_library" package="SC70-6" value="INA214DCK" x="34.3916" y="73.9013" smashed="yes">
 <attribute name="NAME" x="35.9156" y="74.8157" size="0.8128" layer="25" ratio="14" rot="R270"/>
 </element>
-<element name="C6" library="rcl" package="C0603" value="100n" x="40.2336" y="70.7136" smashed="yes" rot="R180">
-<attribute name="NAME" x="40.8686" y="69.8246" size="0.8128" layer="25" ratio="14" rot="R180"/>
+<element name="C6" library="rcl" package="C0603" value="100n" x="40.2336" y="71.3232" smashed="yes" rot="R180">
+<attribute name="NAME" x="40.8686" y="70.4342" size="0.8128" layer="25" ratio="14" rot="R180"/>
 </element>
 <element name="R31" library="rcl" package="R0603" value="309k" x="30.48" y="25.6032" smashed="yes" rot="MR0">
 <attribute name="NAME" x="32.0802" y="26.2382" size="0.8128" layer="26" ratio="14" rot="MR180"/>
@@ -6247,8 +6239,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C31" library="rcl" package="C0603" value="1u" x="55.88" y="17.1704" smashed="yes" rot="R90">
 <attribute name="NAME" x="55.3974" y="15.7226" size="0.8128" layer="25" ratio="14" rot="R270"/>
 </element>
-<element name="R13" library="rcl" package="R1206" value="43m" x="80.4366" y="3.3147" smashed="yes" rot="MR0">
-<attribute name="NAME" x="81.3002" y="0.9779" size="0.8128" layer="26" ratio="14" rot="MR0"/>
+<element name="R13" library="rcl" package="R1206" value="43m" x="80.4672" y="3.048" smashed="yes" rot="MR0">
+<attribute name="NAME" x="81.3308" y="0.7112" size="0.8128" layer="26" ratio="14" rot="MR0"/>
 </element>
 <element name="U7" library="gdp_pss_library" package="SC70-6" value="INA214DCK" x="80.4672" y="6.096" smashed="yes" rot="MR180">
 <attribute name="NAME" x="81.9912" y="4.572" size="0.8128" layer="26" ratio="14" rot="MR90"/>
@@ -6292,8 +6284,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C22" library="rcl" package="C0603" value="1u" x="31.0896" y="7.3152" smashed="yes" rot="MR180">
 <attribute name="NAME" x="29.0322" y="6.985" size="0.8128" layer="26" ratio="14" rot="MR0"/>
 </element>
-<element name="R23" library="rcl" package="R1206" value="43m" x="72.3594" y="2.9083" smashed="yes" rot="MR0">
-<attribute name="NAME" x="73.4262" y="0.5715" size="0.8128" layer="26" ratio="14" rot="MR0"/>
+<element name="R23" library="rcl" package="R1206" value="43m" x="72.5424" y="3.048" smashed="yes" rot="MR0">
+<attribute name="NAME" x="73.6092" y="0.7112" size="0.8128" layer="26" ratio="14" rot="MR0"/>
 </element>
 <element name="U12" library="gdp_pss_library" package="SC70-6" value="INA214DCK" x="72.5424" y="6.096" smashed="yes" rot="MR180">
 <attribute name="NAME" x="74.0664" y="4.572" size="0.8128" layer="26" ratio="14" rot="MR90"/>
@@ -6551,14 +6543,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="TP27" library="testpad" package="TP09R" value="PTR1TP09R" x="80.4672" y="15.0368" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="80.4672" y="13.1318" size="1" layer="38" rot="MR0"/>
 </element>
-<element name="TP28" library="testpad" package="TP09R" value="PTR1TP09R" x="104.0384" y="22.1488" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="104.0384" y="20.2438" size="1" layer="37"/>
-</element>
-<element name="TP29" library="testpad" package="TP09R" value="PTR1TP09R" x="107.2896" y="24.9936" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="107.2896" y="23.0886" size="1" layer="37"/>
-</element>
-<element name="TP30" library="testpad" package="TP09R" value="PTR1TP09R" x="107.4928" y="22.9616" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="107.4928" y="21.0566" size="1" layer="37"/>
+<element name="TP29" library="testpad" package="TP09R" value="PTR1TP09R" x="14.6304" y="1.8288" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="14.6304" y="-0.0762" size="1" layer="37"/>
 </element>
 <element name="U55" library="gdp_pss_library" package="TSSOP8" value="SPV1040T" x="16.256" y="18.0848" rot="R180"/>
 <element name="C143" library="rcl" package="C0603K" value="1u" x="10.9728" y="17.6784" rot="R90"/>
@@ -6583,15 +6569,15 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C151" library="rcl" package="C0805K" value="10u" x="22.352" y="12.3952" rot="R180"/>
 <element name="C152" library="rcl" package="C0805K" value="4.7u" x="18.8976" y="12.192" rot="R90"/>
 <element name="D13" library="diode" package="SMBJ" value="5V1" x="22.1488" y="7.7216" rot="R270"/>
-<element name="L7" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.448" y="9.3472"/>
-<element name="TP31" library="testpad" package="TP09R" value="PTR1TP09R" x="1.8288" y="17.4752">
-<attribute name="TP_SIGNAL_NAME" value="" x="-19.5072" y="-66.2432" size="1.778" layer="27" display="off"/>
+<element name="L7" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.6512" y="9.7536"/>
+<element name="TP31" library="testpad" package="TP09R" value="PTR1TP09R" x="10.3632" y="1.8288">
+<attribute name="TP_SIGNAL_NAME" value="" x="-10.9728" y="-81.8896" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TP32" library="testpad" package="TP09R" value="PTR1TP09R" x="1.016" y="10.3632">
-<attribute name="TP_SIGNAL_NAME" value="" x="-26.0096" y="-76.6064" size="1.778" layer="27" display="off"/>
+<element name="TP32" library="testpad" package="TP09R" value="PTR1TP09R" x="16.4592" y="1.8288">
+<attribute name="TP_SIGNAL_NAME" value="" x="-10.5664" y="-85.1408" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TP33" library="testpad" package="TP09R" value="PTR1TP09R" x="1.6256" y="13.0048">
-<attribute name="TP_SIGNAL_NAME" value="" x="-31.0896" y="-77.216" size="1.778" layer="27" display="off"/>
+<element name="TP33" library="testpad" package="TP09R" value="PTR1TP09R" x="22.5552" y="1.8288">
+<attribute name="TP_SIGNAL_NAME" value="" x="-10.16" y="-88.392" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U57" library="gdp_pss_library" package="TSSOP8" value="SPV1040T" x="16.256" y="57.5056" rot="R180"/>
 <element name="C153" library="rcl" package="C0603K" value="1u" x="10.9728" y="57.3024" rot="R90"/>
@@ -6604,7 +6590,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C156" library="rcl" package="C0805K" value="10u" x="22.1488" y="62.3824" rot="R180"/>
 <element name="C157" library="rcl" package="C0805K" value="4.7u" x="18.288" y="61.5696" rot="R90"/>
 <element name="D14" library="diode" package="SMBJ" value="5V1" x="22.1488" y="57.7088" rot="R270"/>
-<element name="L8" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.448" y="59.3344"/>
+<element name="L8" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.6512" y="59.1312"/>
 <element name="U58" library="gdp_pss_library" package="TSSOP8" value="SPV1040T" x="16.256" y="47.752" rot="R180"/>
 <element name="C158" library="rcl" package="C0603K" value="1u" x="10.9728" y="47.5488" rot="R90"/>
 <element name="R152" library="rcl" package="R0603" value="1k" x="9.144" y="47.5488" rot="R270"/>
@@ -6616,15 +6602,9 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C161" library="rcl" package="C0805K" value="10u" x="22.1488" y="52.6288" rot="R180"/>
 <element name="C162" library="rcl" package="C0805K" value="4.7u" x="18.288" y="51.816" rot="R90"/>
 <element name="D15" library="diode" package="SMBJ" value="5V1" x="22.1488" y="47.9552" rot="R270"/>
-<element name="L9" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.448" y="49.5808"/>
-<element name="TP34" library="testpad" package="TP09R" value="PTR1TP09R" x="138.5824" y="43.8912">
-<attribute name="TP_SIGNAL_NAME" value="" x="117.2464" y="-39.8272" size="1.778" layer="27" display="off"/>
-</element>
-<element name="TP35" library="testpad" package="TP09R" value="PTR1TP09R" x="131.4704" y="45.5168">
-<attribute name="TP_SIGNAL_NAME" value="" x="104.4448" y="-41.4528" size="1.778" layer="27" display="off"/>
-</element>
-<element name="TP36" library="testpad" package="TP09R" value="PTR1TP09R" x="132.08" y="40.64">
-<attribute name="TP_SIGNAL_NAME" value="" x="99.3648" y="-49.5808" size="1.778" layer="27" display="off"/>
+<element name="L9" library="gdp_pss_library" package="MSS7341" value="10uH" x="28.6512" y="49.9872"/>
+<element name="TP35" library="testpad" package="TP09R" value="PTR1TP09R" x="18.288" y="1.8288">
+<attribute name="TP_SIGNAL_NAME" value="" x="-8.7376" y="-85.1408" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -6863,9 +6843,9 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="42.672" y1="66.4464" x2="42.672" y2="66.58755" width="1.016" layer="1"/>
 <wire x1="57.7088" y1="77.4192" x2="48.1584" y2="77.4192" width="1.016" layer="1"/>
 <wire x1="62.3824" y1="71.0184" x2="62.3824" y2="72.7456" width="1.016" layer="1"/>
-<wire x1="42.672" y1="66.58755" x2="42.8498" y2="66.76535" width="1.016" layer="1"/>
-<wire x1="42.8498" y1="66.76535" x2="42.8498" y2="70.69224375" width="1.016" layer="1"/>
-<wire x1="42.8498" y1="70.69224375" x2="44.6786" y2="72.52104375" width="1.016" layer="1"/>
+<wire x1="42.672" y1="66.58755" x2="44.069" y2="67.98455" width="1.016" layer="1"/>
+<wire x1="44.069" y1="67.98455" x2="44.069" y2="71.91144375" width="1.016" layer="1"/>
+<wire x1="44.069" y1="71.91144375" x2="44.6786" y2="72.52104375" width="1.016" layer="1"/>
 <wire x1="44.6786" y1="72.52104375" x2="44.6786" y2="73.9394" width="1.016" layer="1"/>
 <wire x1="44.6786" y1="73.9394" x2="48.1584" y2="77.4192" width="1.016" layer="1"/>
 <wire x1="62.3824" y1="72.7456" x2="57.7088" y2="77.4192" width="1.016" layer="1"/>
@@ -6983,12 +6963,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="25.4" y1="80.6958" x2="27.0256" y2="80.6958" width="0.254" layer="1"/>
 <contactref element="U54" pad="5"/>
 <contactref element="R132" pad="2"/>
-<polygon width="0.2032" layer="16" isolate="0.3048" thermals="no">
-<vertex x="24.5872" y="86.7664"/>
-<vertex x="95.0976" y="82.4992"/>
-<vertex x="95.0976" y="89.6112"/>
-<vertex x="18.6944" y="97.3328"/>
-</polygon>
 <via x="93.6752" y="86.868" extent="1-16" drill="0.3048"/>
 <via x="64.3128" y="88.4936" extent="1-16" drill="0.3048"/>
 <via x="63.5" y="88.4936" extent="1-16" drill="0.3048"/>
@@ -7280,9 +7254,9 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <vertex x="33.528" y="82.9056"/>
 <vertex x="35.3568" y="82.9056"/>
 <vertex x="35.9664" y="82.296"/>
-<vertex x="35.9664" y="79.248"/>
-<vertex x="36.576" y="78.6384"/>
-<vertex x="50.8" y="78.3336"/>
+<vertex x="35.9664" y="80.4672"/>
+<vertex x="36.576" y="79.8576"/>
+<vertex x="49.5808" y="79.5528"/>
 <vertex x="51.2572" y="77.978"/>
 <vertex x="51.2572" y="72.644"/>
 <vertex x="55.5752" y="72.644"/>
@@ -7733,7 +7707,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="35.0416" y1="71.2629" x2="34.6828" y2="70.9041" width="0.4064" layer="1"/>
 <wire x1="41.6964" y1="72.9005" x2="41.6964" y2="71.9445" width="0.4064" layer="1"/>
 <wire x1="41.6964" y1="71.9445" x2="41.2162" y2="71.4643" width="0.4064" layer="1"/>
-<wire x1="41.2162" y1="70.8462" x2="41.0836" y2="70.7136" width="0.4064" layer="1"/>
+<wire x1="41.2162" y1="70.8462" x2="41.0836" y2="71.3232" width="0.4064" layer="1"/>
 <wire x1="41.2162" y1="71.4643" x2="41.2162" y2="70.8462" width="0.4064" layer="1"/>
 <wire x1="82.296" y1="7.3152" x2="76.12631875" y2="7.3152" width="0.6096" layer="2"/>
 <wire x1="76.12631875" y1="7.3152" x2="75.92591875" y2="7.5156" width="0.6096" layer="2"/>
@@ -7756,7 +7730,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="35.9664" y1="9.144" x2="36.2712" y2="8.8392" width="0.2032" layer="16"/>
 <via x="36.2712" y="8.8392" extent="1-16" drill="0.35"/>
 <wire x1="40.8432" y1="69.1896" x2="41.0836" y2="69.43" width="0.4064" layer="1"/>
-<wire x1="41.0836" y1="69.43" x2="41.0836" y2="70.7136" width="0.4064" layer="1"/>
+<wire x1="41.0836" y1="69.43" x2="41.0836" y2="71.3232" width="0.4064" layer="1"/>
 <wire x1="34.6828" y1="70.9041" x2="34.6828" y2="69.1252" width="0.4064" layer="1"/>
 <wire x1="34.6828" y1="69.1252" x2="33.528" y2="67.9704" width="0.4064" layer="1"/>
 <via x="33.528" y="67.9704" extent="1-16" drill="0.35"/>
@@ -8088,17 +8062,14 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="38.1" y1="8.8392" x2="38.1" y2="7.3796" width="0.2032" layer="16"/>
 <wire x1="38.1" y1="7.3796" x2="38.1644" y2="7.3152" width="0.2032" layer="16"/>
 <wire x1="38.1644" y1="5.4864" x2="38.1644" y2="7.3152" width="0.2032" layer="16"/>
-<wire x1="35.09903125" y1="23.1775" x2="35.08633125" y2="23.1648" width="0.2032" layer="1"/>
-<wire x1="34.7472" y1="23.1648" x2="35.08633125" y2="23.1648" width="0.2032" layer="1"/>
-<wire x1="36.5198" y1="22.6114" x2="35.9537" y2="23.1775" width="0.2032" layer="1"/>
-<wire x1="35.9537" y1="23.1775" x2="35.09903125" y2="23.1775" width="0.2032" layer="1"/>
+<wire x1="35.9537" y1="23.1775" x2="36.5198" y2="22.6114" width="0.2032" layer="1"/>
 <wire x1="33.528" y1="16.764" x2="33.528" y2="22.5552" width="0.2" layer="1"/>
-<wire x1="33.528" y1="22.5552" x2="34.1376" y2="23.1648" width="0.2" layer="1"/>
-<wire x1="34.1376" y1="23.1648" x2="34.7472" y2="23.1648" width="0.2" layer="1"/>
 <wire x1="33.528" y1="13.1064" x2="34.4424" y2="12.192" width="0.2" layer="1"/>
 <wire x1="34.4424" y1="12.192" x2="35.3568" y2="12.192" width="0.2" layer="1"/>
 <wire x1="35.3568" y1="12.192" x2="38.1" y2="9.4488" width="0.2" layer="1"/>
 <wire x1="38.1" y1="9.4488" x2="38.1" y2="8.8392" width="0.2" layer="1"/>
+<wire x1="33.528" y1="22.5552" x2="34.1503" y2="23.1775" width="0.2032" layer="1"/>
+<wire x1="34.1503" y1="23.1775" x2="35.9537" y2="23.1775" width="0.2032" layer="1"/>
 </signal>
 <signal name="MUX_OUT">
 <contactref element="U50" pad="43"/>
@@ -8153,18 +8124,16 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="42.672" y1="82.9056" x2="35.9664" y2="82.9056" width="0.2032" layer="1"/>
 <wire x1="35.9664" y1="82.9056" x2="35.0058" y2="81.945" width="0.2032" layer="1"/>
 <wire x1="35.0058" y1="81.945" x2="35.0058" y2="81.534" width="0.2032" layer="1"/>
-<wire x1="41.5662" y1="68.42410625" x2="41.9892" y2="68.84710625" width="0.2032" layer="1"/>
+<wire x1="41.5662" y1="68.42410625" x2="43.2084" y2="70.06630625" width="0.2032" layer="1"/>
 <wire x1="41.5662" y1="68.3886" x2="41.5662" y2="68.42410625" width="0.2032" layer="1"/>
 <wire x1="38.608" y1="53.6448" x2="35.9664" y2="56.2864" width="0.2032" layer="1"/>
 <wire x1="35.9664" y1="65.2272" x2="36.576" y2="65.8368" width="0.2032" layer="1"/>
 <wire x1="35.9664" y1="56.2864" x2="35.9664" y2="65.2272" width="0.2032" layer="1"/>
 <wire x1="36.576" y1="65.8368" x2="39.0144" y2="65.8368" width="0.2032" layer="1"/>
 <wire x1="39.0144" y1="65.8368" x2="41.5662" y2="68.3886" width="0.2032" layer="1"/>
-<wire x1="41.9892" y1="68.84710625" x2="41.9892" y2="71.25" width="0.2032" layer="1"/>
-<wire x1="41.9892" y1="71.25" x2="43.2816" y2="72.5424" width="0.2032" layer="1"/>
-<wire x1="43.2816" y1="72.5424" x2="43.2816" y2="74.676" width="0.2032" layer="1"/>
-<wire x1="43.2816" y1="74.676" x2="43.5864" y2="74.9808" width="0.2032" layer="1"/>
-<wire x1="43.5864" y1="74.9808" x2="43.5864" y2="81.9912" width="0.2032" layer="1"/>
+<wire x1="43.2084" y1="70.06630625" x2="43.2084" y2="72.4692" width="0.2032" layer="1"/>
+<wire x1="43.2084" y1="72.4692" x2="43.5864" y2="72.8472" width="0.2032" layer="1"/>
+<wire x1="43.5864" y1="72.8472" x2="43.5864" y2="81.9912" width="0.2032" layer="1"/>
 </signal>
 <signal name="MCU_INT">
 <contactref element="U49" pad="15"/>
@@ -8357,7 +8326,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="20.5232" y1="38.2016" x2="26.416" y2="38.2016" width="0.8128" layer="1"/>
 <wire x1="26.416" y1="38.2016" x2="27.8384" y2="36.7792" width="0.8128" layer="1"/>
 <wire x1="27.8384" y1="36.7792" x2="28.3599" y2="36.7792" width="0.8128" layer="1"/>
-<wire x1="28.3599" y1="36.7792" x2="28.4226" y2="36.7165" width="0.8128" layer="1"/>
+<wire x1="28.3599" y1="36.7792" x2="28.6512" y2="36.399" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$73">
 </signal>
@@ -9885,7 +9854,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="C122" pad="1"/>
 <contactref element="R116" pad="1"/>
 <contactref element="R31" pad="2"/>
-<contactref element="TP28" pad="TP"/>
 <contactref element="R119" pad="1"/>
 <contactref element="R142" pad="1"/>
 <contactref element="C145" pad="1"/>
@@ -9893,7 +9861,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="R149" pad="1"/>
 <contactref element="R150" pad="1"/>
 <contactref element="C155" pad="1"/>
-<contactref element="TP34" pad="TP"/>
 <wire x1="6.7056" y1="41.046" x2="6.7056" y2="40.8432" width="0.2032" layer="1"/>
 <wire x1="6.7056" y1="40.8432" x2="7.3152" y2="40.2336" width="0.2032" layer="1"/>
 <wire x1="7.3152" y1="40.2336" x2="9.1322" y2="40.2336" width="0.2032" layer="1"/>
@@ -10001,9 +9968,18 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="26.8224" y1="83.5852" x2="27.664" y2="84.4268" width="0.8128" layer="2"/>
 <wire x1="29.0288" y1="84.4268" x2="31.3916" y2="84.4268" width="0.6096" layer="2"/>
 <wire x1="31.3916" y1="84.4268" x2="32.3088" y2="85.344" width="0.6096" layer="2"/>
-<wire x1="104.0384" y1="22.1488" x2="138.5824" y2="43.8912" width="0" layer="19" extent="1-1"/>
-<wire x1="29.63" y1="25.6032" x2="104.0384" y2="22.1488" width="0" layer="19" extent="1-16"/>
-<wire x1="1.8288" y1="17.4752" x2="6.7056" y2="19.5072" width="0" layer="19" extent="1-1"/>
+<wire x1="10.3632" y1="1.8288" x2="9.144" y2="1.8288" width="0.2032" layer="1"/>
+<via x="9.144" y="1.8288" extent="1-16" drill="0.35"/>
+<via x="3.048" y="23.7744" extent="1-16" drill="0.35"/>
+<wire x1="3.048" y1="20.7264" x2="3.048" y2="21.336" width="0.2032" layer="16"/>
+<wire x1="3.048" y1="21.336" x2="3.048" y2="23.7744" width="0.2032" layer="16"/>
+<wire x1="9.144" y1="1.8288" x2="9.144" y2="2.4384" width="0.2032" layer="16"/>
+<wire x1="9.144" y1="2.4384" x2="9.7536" y2="3.048" width="0.2032" layer="16"/>
+<wire x1="9.7536" y1="3.048" x2="9.7536" y2="10.9728" width="0.2032" layer="16"/>
+<wire x1="7.9248" y1="12.8016" x2="4.8768" y2="12.8016" width="0.2032" layer="16"/>
+<wire x1="3.048" y1="14.6304" x2="3.048" y2="20.7264" width="0.2032" layer="16"/>
+<wire x1="9.7536" y1="10.9728" x2="7.9248" y2="12.8016" width="0.2032" layer="16"/>
+<wire x1="4.8768" y1="12.8016" x2="3.048" y2="14.6304" width="0.2032" layer="16"/>
 </signal>
 <signal name="RBF_A">
 <contactref element="J7" pad="P$1"/>
@@ -10030,19 +10006,16 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="R25" pad="1"/>
 <contactref element="R26" pad="2"/>
 <contactref element="C25" pad="1"/>
-<wire x1="29.63" y1="27.432" x2="29.63" y2="29.2608" width="0.3048" layer="16"/>
-<wire x1="31.33" y1="31.0896" x2="29.63" y2="29.2608" width="0.3048" layer="16"/>
 <contactref element="U50" pad="30"/>
 <wire x1="39.59425" y1="21.6114" x2="34.7766" y2="21.6114" width="0.2032" layer="1"/>
-<wire x1="34.7766" y1="21.6114" x2="34.4424" y2="21.9456" width="0.2032" layer="1"/>
-<via x="34.4424" y="21.9456" extent="1-16" drill="0.381" shape="octagon"/>
-<wire x1="31.9452" y1="26.5764" x2="32.9184" y2="25.6032" width="0.2032" layer="16"/>
-<wire x1="31.9452" y1="26.5764" x2="30.63270625" y2="26.5764" width="0.2032" layer="16"/>
-<wire x1="29.77710625" y1="27.432" x2="29.63" y2="27.432" width="0.2032" layer="16"/>
-<wire x1="30.63270625" y1="26.5764" x2="29.77710625" y2="27.432" width="0.2032" layer="16"/>
-<wire x1="32.9184" y1="25.6032" x2="32.9184" y2="23.7744" width="0.2032" layer="16"/>
-<wire x1="32.9184" y1="23.7744" x2="34.4424" y2="22.2504" width="0.2032" layer="16"/>
-<wire x1="34.4424" y1="22.2504" x2="34.4424" y2="21.9456" width="0.2032" layer="16"/>
+<wire x1="34.7766" y1="21.6114" x2="34.4424" y2="21.336" width="0.2032" layer="1"/>
+<via x="34.4424" y="21.336" extent="1-16" drill="0.381" shape="octagon"/>
+<wire x1="34.4424" y1="21.6408" x2="34.4424" y2="21.336" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="20.1168" x2="31.6992" y2="20.1168" width="0.2032" layer="16"/>
+<wire x1="31.6992" y1="20.1168" x2="32.9184" y2="21.336" width="0.2032" layer="16"/>
+<wire x1="32.9184" y1="21.336" x2="34.4424" y2="21.336" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="20.1168" x2="31.33" y2="18.288" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="18.288" x2="31.33" y2="16.4592" width="0.2032" layer="16"/>
 </signal>
 <signal name="PV_TOP1_CSENSE_MUX">
 <contactref element="R7" pad="1"/>
@@ -10159,10 +10132,13 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="36.3514" y1="21.1114" x2="35.3568" y2="20.1168" width="0.2032" layer="1"/>
 <wire x1="35.3568" y1="20.1168" x2="34.4424" y2="20.1168" width="0.2032" layer="1"/>
 <via x="34.4424" y="20.1168" extent="1-16" drill="0.381" shape="octagon"/>
-<wire x1="31.33" y1="16.4592" x2="31.33" y2="18.288" width="0.2032" layer="16"/>
-<wire x1="34.4424" y1="20.1168" x2="32.6136" y2="18.288" width="0.2032" layer="16"/>
-<wire x1="32.6136" y1="18.288" x2="31.33" y2="18.288" width="0.2032" layer="16"/>
-<wire x1="31.33" y1="20.1168" x2="31.33" y2="18.288" width="0.2032" layer="16"/>
+<wire x1="34.4424" y1="20.1168" x2="34.4424" y2="20.15113125" width="0.2032" layer="16"/>
+<wire x1="34.4424" y1="20.15113125" x2="35.0647" y2="20.77343125" width="0.2032" layer="16"/>
+<wire x1="35.0647" y1="20.77343125" x2="35.0647" y2="23.1648" width="0.2032" layer="16"/>
+<wire x1="35.0647" y1="23.1648" x2="35.0647" y2="23.6973" width="0.2032" layer="16"/>
+<wire x1="35.0647" y1="23.6973" x2="31.33" y2="27.432" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="31.0896" x2="31.33" y2="29.2608" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="27.432" x2="31.33" y2="29.2608" width="0.2032" layer="16"/>
 </signal>
 <signal name="PV_TOP2_CSENSE_MUX">
 <contactref element="R17" pad="1"/>
@@ -10929,7 +10905,14 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="29.8704" y1="39.9288" x2="30.1752" y2="40.2336" width="0.8128" layer="2"/>
 <wire x1="30.1752" y1="40.2336" x2="30.1752" y2="39.9288" width="0.8128" layer="2"/>
 <wire x1="30.1752" y1="39.9288" x2="30.48" y2="39.624" width="0.8128" layer="2"/>
-<wire x1="48.504" y1="8.636" x2="107.2896" y2="24.9936" width="0" layer="19" extent="1-1"/>
+<wire x1="14.6304" y1="1.8288" x2="14.0208" y2="2.4384" width="0.2032" layer="1"/>
+<via x="14.0208" y="2.4384" extent="1-16" drill="0.35"/>
+<wire x1="14.0208" y1="2.4384" x2="14.0208" y2="4.2672" width="0.2032" layer="16"/>
+<wire x1="14.0208" y1="4.2672" x2="11.5824" y2="6.7056" width="0.2032" layer="16"/>
+<wire x1="11.5824" y1="6.7056" x2="11.5824" y2="13.4112" width="0.2032" layer="16"/>
+<wire x1="11.5824" y1="13.4112" x2="9.7536" y2="15.24" width="0.2032" layer="16"/>
+<wire x1="9.7536" y1="32.6136" x2="7.9248" y2="34.4424" width="0.2032" layer="16"/>
+<wire x1="9.7536" y1="15.24" x2="9.7536" y2="32.6136" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$292">
 </signal>
@@ -11543,15 +11526,17 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="J6" pad="P$5"/>
 <contactref element="R6" pad="1"/>
 <contactref element="U4" pad="4"/>
-<wire x1="37.5058" y1="81.534" x2="37.5058" y2="79.3654" width="0.8128" layer="1"/>
-<wire x1="37.5058" y1="79.3654" x2="35.5596" y2="77.4192" width="0.8128" layer="1"/>
 <wire x1="35.5596" y1="77.4192" x2="35.052" y2="77.4192" width="0.2032" layer="1"/>
 <wire x1="35.052" y1="77.4192" x2="34.4424" y2="76.8096" width="0.2032" layer="1"/>
 <wire x1="34.4424" y1="76.8096" x2="34.4424" y2="76.2" width="0.2032" layer="1"/>
-<wire x1="34.4424" y1="76.2" x2="34.8996" y2="75.7428" width="0.2032" layer="1"/>
+<wire x1="34.4424" y1="76.2" x2="35.0416" y2="75.6008" width="0.2032" layer="1"/>
 <wire x1="35.0416" y1="75.6008" x2="35.052" y2="75.5904" width="0.2032" layer="1"/>
 <wire x1="35.0416" y1="74.8513" x2="35.0416" y2="75.6008" width="0.2032" layer="1"/>
-<wire x1="35.0416" y1="75.6008" x2="34.8996" y2="75.7428" width="0.2032" layer="1"/>
+<wire x1="37.5058" y1="81.534" x2="37.5058" y2="80.1778" width="0.8128" layer="1"/>
+<wire x1="37.5058" y1="80.1778" x2="37.1856" y2="79.8576" width="0.8128" layer="1"/>
+<wire x1="36.576" y1="79.8576" x2="37.1856" y2="79.8576" width="0.8128" layer="1"/>
+<wire x1="35.5596" y1="77.4192" x2="35.5596" y2="78.8412" width="0.8128" layer="1"/>
+<wire x1="35.5596" y1="78.8412" x2="36.576" y2="79.8576" width="0.8128" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="J7" pad="P$4"/>
@@ -12415,7 +12400,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="76.8096" y1="39.8272" x2="77.216" y2="39.8272" width="0.3048" layer="15"/>
 <wire x1="76.5184" y1="39.1523" x2="76.5184" y2="39.536" width="0.3048" layer="1"/>
 <wire x1="76.5184" y1="39.536" x2="76.8096" y2="39.8272" width="0.3048" layer="1"/>
-<contactref element="TP30" pad="TP"/>
 <wire x1="42.954" y1="41.882" x2="44.9072" y2="40.8432" width="0.2032" layer="1"/>
 <wire x1="46.04" y1="25.3365" x2="44.9707" y2="25.3365" width="0.2032" layer="16"/>
 <wire x1="44.9707" y1="25.3365" x2="44.9072" y2="25.4" width="0.2032" layer="16"/>
@@ -12435,7 +12419,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="C162" pad="2"/>
 <contactref element="D15" pad="A"/>
 <contactref element="U58" pad="5"/>
-<contactref element="TP36" pad="TP"/>
 <wire x1="20.637" y1="47.427" x2="22.1488" y2="45.9152" width="0.2032" layer="1"/>
 <wire x1="19.181" y1="7.1934" x2="20.645" y2="7.1934" width="0.2032" layer="1"/>
 <wire x1="20.645" y1="7.1934" x2="21.844" y2="5.9944" width="0.2032" layer="1"/>
@@ -12726,17 +12709,12 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <via x="18.8976" y="14.6304" extent="1-16" drill="0.35"/>
 <via x="18.288" y="14.6304" extent="1-16" drill="0.35"/>
 <via x="12.192" y="14.6304" extent="1-16" drill="0.35"/>
-<via x="12.4968" y="9.144" extent="1-16" drill="0.35"/>
+<via x="12.8016" y="9.144" extent="1-16" drill="0.35"/>
 <via x="13.4112" y="9.144" extent="1-16" drill="0.35"/>
 <via x="14.3256" y="9.144" extent="1-16" drill="0.35"/>
 <wire x1="4.8768" y1="71.3516" x2="5.08" y2="71.3516" width="0.6096" layer="16"/>
 <wire x1="3.048" y1="72.3392" x2="3.8892" y2="72.3392" width="0.6096" layer="16"/>
 <wire x1="3.8892" y1="72.3392" x2="4.8768" y2="71.3516" width="0.6096" layer="16"/>
-<wire x1="40.5812" y1="71.6708" x2="40.34421875" y2="71.6708" width="0.4064" layer="1"/>
-<wire x1="39.38701875" y1="70.7136" x2="39.3836" y2="70.7136" width="0.4064" layer="1"/>
-<wire x1="40.34421875" y1="71.6708" x2="39.38701875" y2="70.7136" width="0.4064" layer="1"/>
-<wire x1="40.3964" y1="72.9005" x2="40.34421875" y2="72.84831875" width="0.4064" layer="1"/>
-<wire x1="40.34421875" y1="72.84831875" x2="40.34421875" y2="71.6708" width="0.4064" layer="1"/>
 <wire x1="33.7416" y1="72.9513" x2="33.7416" y2="72.3013" width="0.4064" layer="1"/>
 <wire x1="33.7416" y1="71.6629" x2="32.9828" y2="70.9041" width="0.4064" layer="1"/>
 <wire x1="34.3916" y1="72.9513" x2="33.7416" y2="72.3013" width="0.4064" layer="1"/>
@@ -12746,10 +12724,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <via x="37.1856" y="75.5904" extent="1-16" drill="0.35"/>
 <wire x1="30.48" y1="74.6116" x2="30.48" y2="75.5904" width="0.2032" layer="1"/>
 <via x="30.48" y="75.5904" extent="1-16" drill="0.35"/>
-<wire x1="41.0464" y1="72.9005" x2="41.0464" y2="72.4254875" width="0.4064" layer="1"/>
-<wire x1="41.0464" y1="72.4254875" x2="40.632" y2="72.0110875" width="0.4064" layer="1"/>
-<wire x1="40.632" y1="72.0110875" x2="40.632" y2="71.7216" width="0.4064" layer="1"/>
-<wire x1="40.632" y1="71.7216" x2="40.5812" y2="71.6708" width="0.4064" layer="1"/>
 <wire x1="67.5894" y1="10.0584" x2="68.5038" y2="9.144" width="0.4064" layer="16"/>
 <wire x1="68.5038" y1="9.144" x2="71.6924" y2="9.144" width="0.4064" layer="16"/>
 <wire x1="75.2094" y1="9.9568" x2="76.0222" y2="9.144" width="0.4064" layer="16"/>
@@ -12787,7 +12761,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="26.1756" y1="83.5152" x2="28.0416" y2="83.5152" width="0.4064" layer="16"/>
 <wire x1="13.331" y1="8.4934" x2="13.331" y2="9.0638" width="0.2032" layer="1"/>
 <wire x1="13.331" y1="9.0638" x2="13.4112" y2="9.144" width="0.2032" layer="1"/>
-<wire x1="14.3256" y1="9.144" x2="12.4968" y2="9.144" width="0.4064" layer="1"/>
+<wire x1="14.3256" y1="9.144" x2="12.8016" y2="9.144" width="0.4064" layer="1"/>
 <wire x1="11.16" y1="13.4112" x2="11.16" y2="13.5984" width="0.4064" layer="1"/>
 <wire x1="11.16" y1="13.5984" x2="12.192" y2="14.6304" width="0.4064" layer="1"/>
 <wire x1="13.8176" y1="13.4734" x2="13.349" y2="13.4734" width="0.4064" layer="1"/>
@@ -12829,15 +12803,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="18.8976" y1="14.6304" x2="18.8976" y2="13.192" width="0.6096" layer="1"/>
 <wire x1="19.5072" y1="14.6304" x2="19.5072" y2="13.8016" width="0.6096" layer="1"/>
 <wire x1="19.5072" y1="13.8016" x2="18.8976" y2="13.192" width="0.6096" layer="1"/>
-<wire x1="29.63" y1="18.288" x2="29.63" y2="16.4592" width="0.2032" layer="16"/>
-<wire x1="31.33" y1="29.2608" x2="31.33" y2="27.432" width="0.2032" layer="16"/>
-<wire x1="29.63" y1="16.4592" x2="29.63" y2="15.4804" width="0.2032" layer="16"/>
-<wire x1="29.63" y1="15.4804" x2="29.8704" y2="15.24" width="0.2032" layer="16"/>
 <via x="29.8704" y="15.24" extent="1-16" drill="0.35"/>
-<wire x1="31.33" y1="23.7744" x2="31.33" y2="22.5552" width="0.2032" layer="16"/>
-<wire x1="31.33" y1="22.5552" x2="31.33" y2="21.9456" width="0.2032" layer="16"/>
-<wire x1="31.33" y1="22.5552" x2="32.9184" y2="22.5552" width="0.2032" layer="16"/>
-<via x="32.9184" y="22.5552" extent="1-16" drill="0.35"/>
+<via x="32.9184" y="23.7744" extent="1-16" drill="0.35"/>
 <wire x1="28.6512" y1="72.2122" x2="28.6512" y2="74.2188" width="0.3048" layer="1"/>
 <wire x1="28.6512" y1="74.2188" x2="28.8544" y2="74.422" width="0.3048" layer="1"/>
 <wire x1="13.4112" y1="49.3776" x2="14.0208" y2="49.3776" width="0.3048" layer="1"/>
@@ -12849,8 +12816,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="11.8872" y1="53.6448" x2="11.3632" y2="53.6448" width="0.6096" layer="1"/>
 <wire x1="11.3632" y1="53.6448" x2="10.7536" y2="53.0352" width="0.6096" layer="1"/>
 <wire x1="11.8872" y1="53.6448" x2="11.8872" y2="52.4256" width="0.6096" layer="1"/>
-<wire x1="39.3836" y1="70.7136" x2="38.5318" y2="69.8618" width="0.4064" layer="1"/>
-<wire x1="38.5318" y1="69.8618" x2="38.5318" y2="68.8848" width="0.4064" layer="1"/>
 <wire x1="32.9828" y1="70.9041" x2="32.4231" y2="70.9041" width="0.4064" layer="1"/>
 <wire x1="32.4231" y1="70.9041" x2="32.004" y2="71.3232" width="0.4064" layer="1"/>
 <via x="32.004" y="71.3232" extent="1-16" drill="0.35"/>
@@ -12868,19 +12833,35 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="18.8976" y1="72.644" x2="19.05" y2="72.7964" width="0.2032" layer="1"/>
 <wire x1="18.8976" y1="72.4916" x2="18.8976" y2="72.7964" width="0.2032" layer="1"/>
 <wire x1="18.8976" y1="72.7964" x2="19.05" y2="72.9488" width="0.2032" layer="1"/>
-<wire x1="31.33" y1="29.2608" x2="31.9396" y2="29.8704" width="0.2032" layer="16"/>
-<wire x1="31.9396" y1="29.8704" x2="32.3088" y2="29.8704" width="0.2032" layer="16"/>
-<wire x1="32.3088" y1="29.8704" x2="32.3088" y2="29.9368" width="0.2032" layer="16"/>
-<via x="32.3088" y="29.9368" extent="1-16" drill="0.35"/>
-<wire x1="107.4928" y1="22.9616" x2="132.08" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="90.805" y1="38.1" x2="107.4928" y2="22.9616" width="0" layer="19" extent="1-1"/>
-<wire x1="1.6256" y1="13.0048" x2="11.16" y2="13.4112" width="0" layer="19" extent="1-1"/>
+<via x="28.3464" y="29.9368" extent="1-16" drill="0.35"/>
 <wire x1="20.7264" y1="26.2128" x2="23.7744" y2="26.2128" width="1.016" layer="1"/>
 <wire x1="23.7744" y1="26.2128" x2="24.384" y2="26.8224" width="0.8128" layer="1"/>
 <wire x1="24.384" y1="26.8224" x2="24.0792" y2="26.8224" width="0.8128" layer="1"/>
 <wire x1="24.0792" y1="26.8224" x2="23.7744" y2="27.1272" width="0.8128" layer="1"/>
 <wire x1="23.7744" y1="27.1272" x2="20.7264" y2="27.1272" width="0.8128" layer="1"/>
 <wire x1="20.7264" y1="27.1272" x2="20.4216" y2="26.8224" width="0.8128" layer="1"/>
+<wire x1="31.33" y1="23.7744" x2="31.6992" y2="23.7744" width="0.2032" layer="16"/>
+<wire x1="31.6992" y1="23.7744" x2="32.9184" y2="23.7744" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="21.9456" x2="31.33" y2="23.4052" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="23.4052" x2="31.6992" y2="23.7744" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="18.288" x2="29.63" y2="16.4592" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="16.4592" x2="29.8704" y2="16.2188" width="0.2032" layer="16"/>
+<wire x1="29.8704" y1="16.2188" x2="29.8704" y2="15.24" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="29.2608" x2="29.63" y2="27.432" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="29.2608" x2="28.954" y2="29.9368" width="0.2032" layer="16"/>
+<wire x1="28.954" y1="29.9368" x2="28.3464" y2="29.9368" width="0.2032" layer="16"/>
+<wire x1="22.5552" y1="1.8288" x2="23.7744" y2="1.8288" width="0.2032" layer="1"/>
+<via x="23.7744" y="1.8288" extent="1-16" drill="0.35"/>
+<wire x1="41.0464" y1="72.9005" x2="41.0464" y2="72.4408" width="0.2032" layer="1"/>
+<wire x1="41.0464" y1="72.4408" x2="40.8432" y2="72.2376" width="0.2032" layer="1"/>
+<wire x1="40.8432" y1="72.2376" x2="40.2336" y2="72.2376" width="0.2032" layer="1"/>
+<wire x1="40.2336" y1="72.2376" x2="39.9288" y2="72.2376" width="0.2032" layer="1"/>
+<wire x1="39.9288" y1="72.2376" x2="39.3836" y2="71.6924" width="0.508" layer="1"/>
+<wire x1="39.3836" y1="71.6924" x2="39.3836" y2="71.3232" width="0.508" layer="1"/>
+<wire x1="40.3964" y1="72.9005" x2="40.2336" y2="72.7377" width="0.2032" layer="1"/>
+<wire x1="40.2336" y1="72.7377" x2="40.2336" y2="72.2376" width="0.2032" layer="1"/>
+<wire x1="39.3836" y1="71.3232" x2="38.5318" y2="70.4714" width="0.4064" layer="1"/>
+<wire x1="38.5318" y1="70.4714" x2="38.5318" y2="68.8848" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$279">
 <contactref element="R8" pad="2"/>
@@ -12905,18 +12886,15 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="R32" pad="2"/>
 <contactref element="C28" pad="1"/>
 <contactref element="U50" pad="29"/>
-<wire x1="39.59425" y1="22.1114" x2="35.8006" y2="22.1114" width="0.2032" layer="1"/>
-<wire x1="35.8006" y1="22.1114" x2="35.3568" y2="22.5552" width="0.2032" layer="1"/>
-<via x="35.3568" y="22.5552" extent="1-16" drill="0.381" shape="octagon"/>
-<wire x1="35.3568" y1="22.5552" x2="35.3568" y2="21.336" width="0.2032" layer="16"/>
-<wire x1="35.052" y1="21.0312" x2="35.0647" y2="21.0185" width="0.2032" layer="16"/>
-<wire x1="29.63" y1="21.8812" x2="30.48" y2="21.0312" width="0.2032" layer="16"/>
-<wire x1="29.63" y1="21.8812" x2="29.63" y2="21.9456" width="0.2032" layer="16"/>
-<wire x1="30.48" y1="21.0312" x2="35.052" y2="21.0312" width="0.2032" layer="16"/>
-<wire x1="35.052" y1="21.0312" x2="35.3568" y2="21.336" width="0.2032" layer="16"/>
-<wire x1="31.33" y1="25.6032" x2="29.63" y2="23.9032" width="0.2032" layer="16"/>
-<wire x1="29.63" y1="23.9032" x2="29.63" y2="23.7744" width="0.2032" layer="16"/>
-<wire x1="29.63" y1="21.9456" x2="29.63" y2="23.7744" width="0.2032" layer="16"/>
+<wire x1="39.59425" y1="22.1114" x2="34.8862" y2="22.1114" width="0.2032" layer="1"/>
+<wire x1="34.8862" y1="22.1114" x2="34.4424" y2="22.5552" width="0.2032" layer="1"/>
+<via x="34.4424" y="22.5552" extent="1-16" drill="0.381" shape="octagon"/>
+<wire x1="31.33" y1="25.6032" x2="32.3088" y2="25.6032" width="0.2032" layer="16"/>
+<wire x1="32.3088" y1="25.6032" x2="34.4424" y2="23.4696" width="0.2032" layer="16"/>
+<wire x1="34.4424" y1="23.4696" x2="34.4424" y2="22.5552" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="23.7744" x2="31.33" y2="25.4744" width="0.2032" layer="16"/>
+<wire x1="31.33" y1="25.4744" x2="31.33" y2="25.6032" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="23.7744" x2="29.63" y2="21.9456" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$540">
 </signal>
@@ -13157,13 +13135,12 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="88.265" y1="58.1914" x2="89.4588" y2="56.9976" width="0.6096" layer="16"/>
 <wire x1="89.4588" y1="56.9976" x2="89.4588" y2="11.8872" width="0.6096" layer="16"/>
 <wire x1="89.4588" y1="11.8872" x2="85.344" y2="7.7724" width="0.6096" layer="16"/>
-<wire x1="81.8586" y1="3.3147" x2="84.3915" y2="3.3147" width="0.6096" layer="16"/>
-<wire x1="84.3915" y1="3.3147" x2="85.344" y2="4.2672" width="0.6096" layer="16"/>
+<wire x1="81.8892" y1="3.048" x2="84.1248" y2="3.048" width="0.6096" layer="16"/>
+<wire x1="84.1248" y1="3.048" x2="85.344" y2="4.2672" width="0.6096" layer="16"/>
 <wire x1="85.344" y1="4.2672" x2="85.344" y2="7.7724" width="0.6096" layer="16"/>
 <wire x1="81.1172" y1="5.146" x2="81.1172" y2="4.2268" width="0.2032" layer="16"/>
 <wire x1="81.1172" y1="4.2268" x2="82.296" y2="3.048" width="0.2032" layer="16"/>
-<wire x1="82.296" y1="3.048" x2="82.1253" y2="3.048" width="0.2032" layer="16"/>
-<wire x1="82.1253" y1="3.048" x2="81.8586" y2="3.3147" width="0.2032" layer="16"/>
+<wire x1="82.296" y1="3.048" x2="81.8892" y2="3.048" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$644">
 <contactref element="R18" pad="2"/>
@@ -13409,11 +13386,11 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="92.0496" y1="12.192" x2="94.488" y2="9.7536" width="0.6096" layer="16"/>
 <wire x1="94.488" y1="9.7536" x2="94.488" y2="3.5052" width="0.6096" layer="16"/>
 <wire x1="94.488" y1="3.5052" x2="91.5924" y2="0.6096" width="0.6096" layer="16"/>
-<wire x1="73.7814" y1="2.9083" x2="73.9013" y2="2.9083" width="0.6096" layer="16"/>
+<wire x1="73.9644" y1="3.048" x2="73.9013" y2="2.9083" width="0.6096" layer="16"/>
 <wire x1="73.9013" y1="2.9083" x2="76.8096" y2="0.6096" width="0.6096" layer="16"/>
 <wire x1="76.8096" y1="0.6096" x2="91.5924" y2="0.6096" width="0.6096" layer="16"/>
 <wire x1="73.1924" y1="5.146" x2="73.1924" y2="3.4973" width="0.2032" layer="16"/>
-<wire x1="73.1924" y1="3.4973" x2="73.7814" y2="2.9083" width="0.2032" layer="16"/>
+<wire x1="73.1924" y1="3.4973" x2="73.9644" y2="3.048" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$756">
 <contactref element="R137" pad="1"/>
@@ -14063,7 +14040,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="19.181" y1="7.8434" x2="21.8642" y2="7.8434" width="0.2032" layer="1"/>
 <wire x1="21.8642" y1="7.8434" x2="21.9456" y2="7.9248" width="0.2032" layer="1"/>
 <wire x1="21.9456" y1="7.9248" x2="26.6454" y2="7.9248" width="1.016" layer="1"/>
-<wire x1="26.6454" y1="7.9248" x2="28.448" y2="6.1222" width="1.016" layer="1"/>
+<wire x1="26.6454" y1="7.9248" x2="28.6512" y2="6.5286" width="1.016" layer="1"/>
 </signal>
 <signal name="N$785">
 <contactref element="C153" pad="1"/>
@@ -14140,7 +14117,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="21.9456" y1="57.912" x2="24.384" y2="57.912" width="0.6096" layer="1"/>
 <wire x1="24.384" y1="57.912" x2="26.2128" y2="56.0832" width="0.6096" layer="1"/>
 <wire x1="26.2128" y1="56.0832" x2="28.4218" y2="56.0832" width="0.6096" layer="1"/>
-<wire x1="28.4218" y1="56.0832" x2="28.448" y2="56.1094" width="0.6096" layer="1"/>
+<wire x1="28.4218" y1="56.0832" x2="28.6512" y2="55.9062" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$790">
 <contactref element="C158" pad="1"/>
@@ -14216,14 +14193,14 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <signal name="N$794">
 <contactref element="U58" pad="3"/>
 <contactref element="L9" pad="2"/>
-<wire x1="26.8224" y1="46.9392" x2="27.8646" y2="46.9392" width="0.2032" layer="1"/>
-<wire x1="27.8646" y1="46.9392" x2="28.448" y2="46.3558" width="0.2032" layer="1"/>
+<wire x1="27.8122" y1="46.9392" x2="27.8646" y2="46.9392" width="0.2032" layer="1"/>
+<wire x1="27.8646" y1="46.9392" x2="28.6512" y2="46.7622" width="0.2032" layer="1"/>
 <wire x1="19.181" y1="48.077" x2="21.2546" y2="48.077" width="0.2032" layer="1"/>
 <wire x1="21.2546" y1="48.077" x2="21.336" y2="48.1584" width="0.2032" layer="1"/>
 <wire x1="21.336" y1="48.1584" x2="25.6032" y2="48.1584" width="0.8128" layer="1"/>
-<wire x1="25.6032" y1="48.1584" x2="27.432" y2="46.3296" width="0.8128" layer="1"/>
-<wire x1="27.432" y1="46.3296" x2="28.4218" y2="46.3296" width="0.8128" layer="1"/>
-<wire x1="28.4218" y1="46.3296" x2="28.448" y2="46.3558" width="0.8128" layer="1"/>
+<wire x1="25.6032" y1="48.1584" x2="26.8224" y2="46.9392" width="0.8128" layer="1"/>
+<wire x1="26.8224" y1="46.9392" x2="27.8122" y2="46.9392" width="0.8128" layer="1"/>
+<wire x1="27.8122" y1="46.9392" x2="28.6512" y2="46.7622" width="0.8128" layer="1"/>
 </signal>
 <signal name="MPPT2_MID">
 <contactref element="R145" pad="1"/>
@@ -14346,7 +14323,23 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="25.6032" y1="1.2192" x2="25.6032" y2="1.8288" width="0.6096" layer="1"/>
 <wire x1="26.2128" y1="1.8288" x2="26.2128" y2="1.2192" width="0.6096" layer="1"/>
 <wire x1="6.096" y1="14.6304" x2="6.096" y2="13.716" width="0.2032" layer="1"/>
-<wire x1="6.096" y1="12.4968" x2="1.016" y2="10.3632" width="0" layer="19" extent="1-1"/>
+<contactref element="R27" pad="2"/>
+<wire x1="21.9456" y1="31.0896" x2="17.6784" y2="26.8224" width="0.2032" layer="16"/>
+<wire x1="17.6784" y1="26.8224" x2="12.8016" y2="26.8224" width="0.2032" layer="16"/>
+<wire x1="12.8016" y1="26.8224" x2="12.192" y2="26.2128" width="0.2032" layer="16"/>
+<wire x1="12.192" y1="26.2128" x2="12.192" y2="24.6888" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="31.0896" x2="21.9456" y2="31.0896" width="0.2032" layer="16"/>
+<wire x1="16.4592" y1="1.8288" x2="15.8496" y2="2.4384" width="0.2032" layer="1"/>
+<via x="15.8496" y="2.4384" extent="1-16" drill="0.35"/>
+<wire x1="14.27215" y1="1.8316" x2="13.76945" y2="1.8316" width="0.2032" layer="16"/>
+<wire x1="13.76945" y1="1.8316" x2="13.414" y2="2.18705" width="0.2032" layer="16"/>
+<wire x1="13.414" y1="2.18705" x2="13.414" y2="4.2644" width="0.2032" layer="16"/>
+<wire x1="15.8496" y1="2.4384" x2="14.87895" y2="2.4384" width="0.2032" layer="16"/>
+<wire x1="14.87895" y1="2.4384" x2="14.27215" y2="1.8316" width="0.2032" layer="16"/>
+<wire x1="9.4488" y1="14.9352" x2="6.7056" y2="14.9352" width="0.2032" layer="16"/>
+<wire x1="13.414" y1="4.2644" x2="11.176" y2="6.5024" width="0.2032" layer="16"/>
+<wire x1="11.176" y1="6.5024" x2="11.176" y2="13.208" width="0.2032" layer="16"/>
+<wire x1="11.176" y1="13.208" x2="9.4488" y2="14.9352" width="0.2032" layer="16"/>
 </signal>
 <signal name="MPPT3_MID">
 <contactref element="R153" pad="1"/>
@@ -14501,7 +14494,15 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="45.1104" y1="83.5152" x2="45.1104" y2="82.9056" width="0.6096" layer="2"/>
 <wire x1="28.6512" y1="78.6384" x2="29.8704" y2="79.8576" width="0.6096" layer="2"/>
 <wire x1="29.8704" y1="79.8576" x2="29.8704" y2="82.296" width="0.6096" layer="2"/>
-<wire x1="90.805" y1="68.58" x2="131.4704" y2="45.5168" width="0" layer="19" extent="1-1"/>
+<wire x1="18.288" y1="1.8288" x2="17.6784" y2="2.4384" width="0.2032" layer="1"/>
+<via x="17.6784" y="2.4384" extent="1-16" drill="0.35"/>
+<wire x1="17.6784" y1="2.4384" x2="16.4592" y2="3.6576" width="0.2032" layer="16"/>
+<wire x1="16.4592" y1="3.6576" x2="15.24" y2="3.6576" width="0.2032" layer="16"/>
+<wire x1="11.9888" y1="13.6144" x2="10.3632" y2="15.24" width="0.2032" layer="16"/>
+<wire x1="15.24" y1="3.6576" x2="11.9888" y2="6.9088" width="0.2032" layer="16"/>
+<wire x1="11.9888" y1="6.9088" x2="11.9888" y2="13.6144" width="0.2032" layer="16"/>
+<wire x1="10.3632" y1="15.24" x2="10.3632" y2="53.0352" width="0.2032" layer="16"/>
+<wire x1="10.3632" y1="53.0352" x2="9.144" y2="54.2544" width="0.2032" layer="16"/>
 </signal>
 <signal name="MPPT3L_PV_P">
 <contactref element="C161" pad="1"/>
@@ -14531,9 +14532,9 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="14.6304" y1="54.2544" x2="24.9936" y2="54.2544" width="0.2032" layer="2"/>
 <via x="24.9936" y="54.2544" extent="1-16" drill="0.381" shape="octagon"/>
 <wire x1="24.9936" y1="54.2544" x2="24.9936" y2="52.9074" width="0.2032" layer="1"/>
-<wire x1="24.9936" y1="52.9074" x2="28.448" y2="52.8058" width="0.2032" layer="1"/>
+<wire x1="24.9936" y1="52.9074" x2="28.6512" y2="53.2122" width="0.2032" layer="1"/>
 <wire x1="23.1488" y1="52.6288" x2="28.271" y2="52.6288" width="1.016" layer="1"/>
-<wire x1="28.271" y1="52.6288" x2="28.448" y2="52.8058" width="1.016" layer="1"/>
+<wire x1="28.271" y1="52.6288" x2="28.6512" y2="53.2122" width="1.016" layer="1"/>
 <wire x1="34.51608125" y1="70.104" x2="32.3088" y2="67.89671875" width="0.6096" layer="16"/>
 <wire x1="32.3088" y1="60.3504" x2="31.6992" y2="59.7408" width="0.6096" layer="16"/>
 <wire x1="32.3088" y1="67.89671875" x2="32.3088" y2="60.3504" width="0.6096" layer="16"/>
@@ -14593,7 +14594,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="26.8224" y1="60.3504" x2="28.6512" y2="62.1792" width="0.8128" layer="1"/>
 <wire x1="28.6512" y1="62.1792" x2="28.8282" y2="62.1792" width="0.8128" layer="1"/>
 <wire x1="29.2608" y1="62.1792" x2="28.8282" y2="62.1792" width="0.8128" layer="1"/>
-<wire x1="28.8282" y1="62.1792" x2="28.448" y2="62.5594" width="0.8128" layer="1"/>
+<wire x1="28.8282" y1="62.1792" x2="28.6512" y2="62.3562" width="0.8128" layer="1"/>
 <wire x1="26.8224" y1="60.3504" x2="26.2128" y2="60.96" width="0.8128" layer="1"/>
 <wire x1="26.2128" y1="62.1792" x2="26.2128" y2="60.96" width="0.8128" layer="1"/>
 <via x="26.8224" y="59.7408" extent="1-16" drill="0.35"/>
@@ -14630,16 +14631,16 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="U12" pad="5"/>
 <contactref element="R23" pad="2"/>
 <wire x1="72.5424" y1="5.146" x2="72.5424" y2="4.5133" width="0.2032" layer="16"/>
-<wire x1="72.5424" y1="4.5133" x2="70.9374" y2="2.9083" width="0.2032" layer="16"/>
+<wire x1="72.5424" y1="4.5133" x2="71.1204" y2="3.048" width="0.2032" layer="16"/>
 <wire x1="34.1376" y1="5.146" x2="34.1376" y2="4.2672" width="0.2032" layer="16"/>
 <wire x1="34.1376" y1="4.2672" x2="33.528" y2="3.6576" width="0.2032" layer="16"/>
 <wire x1="33.528" y1="3.6576" x2="33.3252" y2="3.6576" width="0.2032" layer="16"/>
-<wire x1="70.9374" y1="2.9083" x2="70.9374" y2="2.4384" width="0.6096" layer="16"/>
+<wire x1="71.1204" y1="3.048" x2="70.9374" y2="2.4384" width="0.6096" layer="16"/>
 <wire x1="70.9374" y1="2.4384" x2="70.9374" y2="2.0526" width="0.6096" layer="16"/>
 <wire x1="70.9374" y1="2.0526" x2="70.104" y2="1.2192" width="0.6096" layer="16"/>
 <wire x1="32.7156" y1="3.048" x2="33.3252" y2="3.6576" width="0.2032" layer="16"/>
 <wire x1="31.6992" y1="12.192" x2="28.8282" y2="12.192" width="0.6096" layer="1"/>
-<wire x1="28.8282" y1="12.192" x2="28.448" y2="12.5722" width="0.6096" layer="1"/>
+<wire x1="28.8282" y1="12.192" x2="28.6512" y2="12.9786" width="0.6096" layer="1"/>
 <wire x1="15.8496" y1="13.4484" x2="16.4592" y2="14.058" width="0.2032" layer="1"/>
 <wire x1="16.4592" y1="15.24" x2="17.0688" y2="15.8496" width="0.2032" layer="1"/>
 <wire x1="16.4592" y1="14.058" x2="16.4592" y2="15.24" width="0.2032" layer="1"/>
@@ -14675,10 +14676,12 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="30.0708" y1="10.3632" x2="29.4612" y2="10.3632" width="0.8128" layer="16"/>
 <wire x1="30.0708" y1="11.5824" x2="29.4612" y2="11.5824" width="0.8128" layer="16"/>
 <wire x1="30.0708" y1="11.5824" x2="30.0708" y2="10.3632" width="0.8128" layer="16"/>
-<contactref element="R27" pad="2"/>
 <contactref element="R25" pad="2"/>
-<wire x1="29.63" y1="20.1168" x2="29.63" y2="31.0896" width="0" layer="19" extent="16-16"/>
-<wire x1="28.448" y1="12.5722" x2="29.63" y2="20.1168" width="0" layer="19" extent="1-16"/>
+<wire x1="28.0416" y1="20.1168" x2="27.432" y2="19.5072" width="0.2032" layer="16"/>
+<wire x1="27.432" y1="19.5072" x2="27.432" y2="14.6304" width="0.2032" layer="16"/>
+<wire x1="27.432" y1="14.6304" x2="29.2608" y2="12.8016" width="0.2032" layer="16"/>
+<wire x1="29.2608" y1="12.8016" x2="29.2608" y2="10.9728" width="0.2032" layer="16"/>
+<wire x1="29.63" y1="20.1168" x2="28.0416" y2="20.1168" width="0.2032" layer="16"/>
 </signal>
 <signal name="MPPT2H_PV_P">
 <contactref element="C146" pad="1"/>
@@ -14692,10 +14695,9 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="80.4672" y1="5.146" x2="80.4672" y2="4.2672" width="0.2032" layer="16"/>
 <wire x1="80.4672" y1="4.2672" x2="79.8576" y2="3.6576" width="0.2032" layer="16"/>
 <wire x1="79.8576" y1="3.6576" x2="79.3575" y2="3.6576" width="0.2032" layer="16"/>
-<wire x1="79.3575" y1="3.6576" x2="79.0146" y2="3.3147" width="0.2032" layer="16"/>
+<wire x1="79.3575" y1="3.6576" x2="79.0452" y2="3.048" width="0.2032" layer="16"/>
 <wire x1="42.0624" y1="5.146" x2="42.0624" y2="4.47" width="0.2032" layer="16"/>
-<wire x1="79.0146" y1="3.3147" x2="77.0763" y2="3.3147" width="0.6096" layer="16"/>
-<wire x1="77.0763" y1="3.3147" x2="76.8096" y2="3.048" width="0.6096" layer="16"/>
+<wire x1="79.0452" y1="3.048" x2="76.8096" y2="3.048" width="0.6096" layer="16"/>
 <via x="76.8096" y="3.048" extent="1-16" drill="0.381" shape="octagon"/>
 <wire x1="76.8096" y1="3.048" x2="76.8096" y2="1.2192" width="0.6096" layer="15"/>
 <wire x1="76.8096" y1="1.2192" x2="76.2" y2="0.6096" width="0.6096" layer="15"/>
@@ -14741,7 +14743,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <via x="14.6304" y="44.5008" extent="1-16" drill="0.381" shape="octagon"/>
 <via x="27.432" y="44.5008" extent="1-16" drill="0.381" shape="octagon"/>
 <wire x1="27.432" y1="44.5008" x2="27.432" y2="44.1571" width="0.2032" layer="1"/>
-<wire x1="27.432" y1="44.1571" x2="28.4226" y2="43.1665" width="0.2032" layer="1"/>
+<wire x1="27.432" y1="44.1571" x2="28.6512" y2="42.849" width="0.2032" layer="1"/>
 <via x="28.0416" y="44.5008" extent="1-16" drill="0.381" shape="octagon"/>
 <via x="28.6512" y="44.5008" extent="1-16" drill="0.381" shape="octagon"/>
 <via x="28.3464" y="45.1104" extent="1-16" drill="0.381" shape="octagon"/>
@@ -14766,9 +14768,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="31.5948" y1="77.4192" x2="32.6106" y2="77.3178" width="0.6096" layer="1"/>
 <wire x1="32.6106" y1="77.3178" x2="32.817" y2="77.3178" width="0.6096" layer="1"/>
 <wire x1="23.479" y1="42.9895" x2="28.2456" y2="42.9895" width="1.016" layer="1"/>
-<wire x1="28.2456" y1="42.9895" x2="28.4226" y2="43.1665" width="1.016" layer="1"/>
-<wire x1="28.6512" y1="44.5008" x2="28.6512" y2="43.3951" width="1.016" layer="1"/>
-<wire x1="28.6512" y1="43.3951" x2="28.4226" y2="43.1665" width="1.016" layer="1"/>
+<wire x1="28.2456" y1="42.9895" x2="28.6512" y2="42.849" width="1.016" layer="1"/>
+<wire x1="28.6512" y1="44.5008" x2="28.6512" y2="42.849" width="1.016" layer="1"/>
 <wire x1="28.0416" y1="44.5008" x2="28.0416" y2="43.1935" width="1.016" layer="1"/>
 <wire x1="28.0416" y1="43.1935" x2="28.2456" y2="42.9895" width="1.016" layer="1"/>
 <wire x1="27.432" y1="44.5008" x2="27.432" y2="43.8031" width="1.016" layer="1"/>
@@ -14802,8 +14803,8 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <contactref element="R111" pad="1"/>
 <contactref element="L4" pad="1"/>
 <wire x1="28.6512" y1="33.705" x2="28.035571875" y2="33.680690625" width="0.2032" layer="1"/>
-<wire x1="28.035571875" y1="33.680690625" x2="25.600965625" y2="33.5845625" width="0.2032" layer="1"/>
-<wire x1="25.600965625" y1="33.5845625" x2="22.54" y2="33.4637" width="0.2032" layer="1"/>
+<wire x1="28.035571875" y1="33.680690625" x2="27.42691875" y2="33.656659375" width="0.2032" layer="1"/>
+<wire x1="27.42691875" y1="33.656659375" x2="25.600965625" y2="33.5845625" width="0.2032" layer="1"/>
 <wire x1="22.54" y1="33.4637" x2="23.1234" y2="33.4899" width="0.2032" layer="1"/>
 <contactref element="U9" pad="5"/>
 <contactref element="R16" pad="2"/>
@@ -14827,20 +14828,12 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <via x="25.6032" y="34.7472" extent="1-16" drill="0.381" shape="octagon"/>
 <via x="26.2128" y="34.7472" extent="1-16" drill="0.381" shape="octagon"/>
 <via x="26.8224" y="34.7472" extent="1-16" drill="0.381" shape="octagon"/>
-<wire x1="26.2128" y1="34.7472" x2="26.2128" y2="45.1104" width="0.6096" layer="2"/>
-<wire x1="29.8704" y1="48.768" x2="30.2006" y2="49.0474" width="0.6096" layer="2"/>
-<wire x1="39.4212" y1="77.4192" x2="39.624" y2="77.4192" width="0.2032" layer="1"/>
-<wire x1="39.624" y1="77.4192" x2="39.9288" y2="77.4192" width="0.2032" layer="1"/>
+<wire x1="39.4212" y1="77.4192" x2="39.9288" y2="77.4192" width="0.2032" layer="1"/>
 <wire x1="39.9288" y1="77.4192" x2="40.5384" y2="76.8096" width="0.2032" layer="1"/>
 <wire x1="40.5384" y1="75.8952" x2="40.5384" y2="76.8096" width="0.2032" layer="1"/>
 <wire x1="41.0464" y1="75.3872" x2="40.5384" y2="75.8952" width="0.2032" layer="1"/>
 <wire x1="41.0464" y1="74.8005" x2="41.0464" y2="75.3872" width="0.2032" layer="1"/>
-<wire x1="30.2006" y1="72.5424" x2="31.29" y2="73.6318" width="0.6096" layer="2"/>
-<via x="32.9184" y="79.8576" extent="1-16" drill="0.35"/>
-<via x="39.624" y="79.8576" extent="1-16" drill="0.35"/>
-<wire x1="39.624" y1="79.8576" x2="39.624" y2="77.4192" width="0.6096" layer="1"/>
-<wire x1="30.2006" y1="49.0474" x2="30.2006" y2="72.5424" width="0.6096" layer="2"/>
-<wire x1="32.9184" y1="79.8576" x2="39.624" y2="79.8576" width="0.6096" layer="16"/>
+<wire x1="31.29" y1="73.6318" x2="30.2006" y2="72.5424" width="0.6096" layer="2"/>
 <wire x1="24.9936" y1="34.7472" x2="26.8224" y2="34.7472" width="1.016" layer="1"/>
 <wire x1="24.9936" y1="34.7472" x2="25.600965625" y2="34.139834375" width="1.016" layer="1"/>
 <wire x1="25.600965625" y1="34.139834375" x2="25.600965625" y2="33.5845625" width="1.016" layer="1"/>
@@ -14849,11 +14842,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="26.8224" y1="34.7472" x2="27.888909375" y2="33.680690625" width="1.016" layer="1"/>
 <wire x1="27.888909375" y1="33.680690625" x2="28.035571875" y2="33.680690625" width="1.016" layer="1"/>
 <wire x1="31.29" y1="73.6318" x2="31.29" y2="76.10524375" width="0.6096" layer="2"/>
-<wire x1="30.48" y1="76.91524375" x2="30.48" y2="78.0288" width="0.6096" layer="2"/>
-<wire x1="30.48" y1="78.0288" x2="32.3088" y2="79.8576" width="0.6096" layer="2"/>
-<wire x1="32.3088" y1="79.8576" x2="32.9184" y2="79.8576" width="0.6096" layer="2"/>
-<wire x1="31.29" y1="76.10524375" x2="30.48" y2="76.91524375" width="0.6096" layer="2"/>
-<wire x1="26.2128" y1="45.1104" x2="29.8704" y2="48.768" width="0.6096" layer="2"/>
 <wire x1="53.0352" y1="3.048" x2="51.816" y2="4.2672" width="1.016" layer="2"/>
 <wire x1="51.816" y1="4.2672" x2="41.966775" y2="4.2672" width="1.016" layer="2"/>
 <wire x1="41.966775" y1="4.2672" x2="41.052375" y2="5.1816" width="1.016" layer="2"/>
@@ -14863,6 +14851,22 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="31.48570625" y1="5.1816" x2="26.2128" y2="10.45450625" width="1.016" layer="2"/>
 <wire x1="26.8224" y1="25.22920625" x2="26.8224" y2="34.7472" width="1.016" layer="2"/>
 <wire x1="25.6032" y1="34.7472" x2="26.2128" y2="34.7472" width="0.2032" layer="16"/>
+<wire x1="23.1234" y1="33.4899" x2="23.290159375" y2="33.656659375" width="1.016" layer="1"/>
+<wire x1="23.290159375" y1="33.656659375" x2="27.42691875" y2="33.656659375" width="1.016" layer="1"/>
+<wire x1="32.9184" y1="78.6384" x2="33.528" y2="78.0288" width="0.8128" layer="2"/>
+<wire x1="37.1856" y1="78.0288" x2="37.7952" y2="77.4192" width="0.8128" layer="2"/>
+<via x="37.7952" y="77.4192" extent="1-16" drill="0.35"/>
+<wire x1="37.7952" y1="77.4192" x2="39.4212" y2="77.4192" width="0.8128" layer="1"/>
+<wire x1="33.528" y1="78.0288" x2="37.1856" y2="78.0288" width="0.8128" layer="2"/>
+<wire x1="31.29" y1="76.10524375" x2="31.29" y2="76.4308375" width="0.8128" layer="2"/>
+<wire x1="31.29" y1="76.4308375" x2="30.5816" y2="77.1392375" width="0.8128" layer="2"/>
+<wire x1="30.5816" y1="77.1392375" x2="30.5816" y2="78.1261625" width="0.8128" layer="2"/>
+<wire x1="31.0938375" y1="78.6384" x2="32.9184" y2="78.6384" width="0.8128" layer="2"/>
+<wire x1="30.5816" y1="78.1261625" x2="31.0938375" y2="78.6384" width="0.8128" layer="2"/>
+<wire x1="30.2006" y1="72.5424" x2="30.0228" y2="72.3646" width="0.8128" layer="2"/>
+<wire x1="30.0228" y1="72.3646" x2="30.0228" y2="54.79875625" width="0.8128" layer="2"/>
+<wire x1="30.0228" y1="54.79875625" x2="26.2128" y2="50.98875625" width="0.8128" layer="2"/>
+<wire x1="26.2128" y1="50.98875625" x2="26.2128" y2="34.7472" width="0.8128" layer="2"/>
 </signal>
 </signals>
 </board>
