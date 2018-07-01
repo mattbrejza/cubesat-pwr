@@ -11090,26 +11090,6 @@ excluding deployment</text>
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="42"/>
-<wire x1="200.66" y1="114.3" x2="195.58" y2="114.3" width="0.1524" layer="91"/>
-<label x="200.66" y="114.3" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="44"/>
-<wire x1="195.58" y1="111.76" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
-<label x="200.66" y="111.76" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="41"/>
-<wire x1="175.26" y1="114.3" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
-<label x="175.26" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="43"/>
-<wire x1="175.26" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
-<label x="175.26" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="35"/>
 <wire x1="180.34" y1="121.92" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
 <label x="175.26" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -11152,6 +11132,28 @@ excluding deployment</text>
 <pinref part="J2" gate="G$1" pin="8"/>
 <wire x1="195.58" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
 <label x="200.66" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CHARGE_BATT" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="41"/>
+<wire x1="180.34" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<label x="175.26" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="43"/>
+<wire x1="175.26" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
+<label x="175.26" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="42"/>
+<wire x1="195.58" y1="114.3" x2="200.66" y2="114.3" width="0.1524" layer="91"/>
+<label x="200.66" y="114.3" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="44"/>
+<wire x1="200.66" y1="111.76" x2="195.58" y2="111.76" width="0.1524" layer="91"/>
+<label x="200.66" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -11430,18 +11432,6 @@ for INA214</text>
 <label x="30.48" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VBATT" class="0">
-<segment>
-<pinref part="U54" gate="G$1" pin="IN-"/>
-<wire x1="177.8" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="134.62" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="R132" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="154.94" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
-<junction x="175.26" y="154.94"/>
-<label x="215.9" y="154.94" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="CHARGE_OUT" class="0">
 <segment>
 <pinref part="U54" gate="G$1" pin="IN+"/>
@@ -11471,6 +11461,18 @@ for INA214</text>
 <wire x1="210.82" y1="119.38" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
 <label x="215.9" y="119.38" size="1.778" layer="95" xref="yes"/>
 <junction x="210.82" y="119.38"/>
+</segment>
+</net>
+<net name="CHARGE_BATT" class="0">
+<segment>
+<pinref part="U54" gate="G$1" pin="IN-"/>
+<wire x1="177.8" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="134.62" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R132" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="154.94" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
+<junction x="175.26" y="154.94"/>
+<label x="215.9" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -18480,17 +18482,6 @@ planes to connect</text>
 <wire x1="132.08" y1="43.18" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBATT" class="0">
-<segment>
-<pinref part="R137" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
-<junction x="71.12" y="20.32"/>
-<pinref part="C142" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="17.78" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
-<label x="83.82" y="20.32" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$762" class="0">
 <segment>
 <pinref part="U53" gate="A" pin="SRN"/>
@@ -18868,6 +18859,17 @@ planes to connect</text>
 <pinref part="R125" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="-30.48" x2="50.8" y2="-30.48" width="0.1524" layer="91"/>
 <label x="55.88" y="-30.48" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CHARGE_BATT" class="0">
+<segment>
+<pinref part="R137" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
+<junction x="71.12" y="20.32"/>
+<pinref part="C142" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="17.78" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
+<label x="83.82" y="20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
