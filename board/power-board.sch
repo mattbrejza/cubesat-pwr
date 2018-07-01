@@ -10096,12 +10096,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C99" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="C102" library="rcl" deviceset="C-EU" device="C1210" value="22u"/>
 <part name="L1" library="gdp_pss_library" deviceset="VISHAY-INDUCTOR" device="" value="2.2u"/>
-<part name="R95" library="rcl" deviceset="R-EU_" device="R0603" value="1.5k"/>
-<part name="R96" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="R95" library="rcl" deviceset="R-EU_" device="R0603" value="1.45k"/>
+<part name="R96" library="rcl" deviceset="R-EU_" device="R0603" value="1.02k"/>
 <part name="U43" library="tomparts" deviceset="TLV3491" device="AIDBV"/>
 <part name="R98" library="rcl" deviceset="R-EU_" device="R0603" value="12.4k"/>
 <part name="R97" library="rcl" deviceset="R-EU_" device="R0603" value="1.24k"/>
-<part name="R99" library="rcl" deviceset="R-EU_" device="R0603" value="15k"/>
+<part name="R99" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="C98" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND86" library="supply1" deviceset="GND" device=""/>
 <part name="U45" library="gdp_pss_library" deviceset="FDS8858CZ" device=""/>
@@ -10148,12 +10148,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C106" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="C109" library="rcl" deviceset="C-EU" device="C1210" value="22u"/>
 <part name="L2" library="gdp_pss_library" deviceset="VISHAY-INDUCTOR" device="" value="2.2u"/>
-<part name="R102" library="rcl" deviceset="R-EU_" device="R0603" value="1.5k"/>
-<part name="R103" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="R102" library="rcl" deviceset="R-EU_" device="R0603" value="1.45k"/>
+<part name="R103" library="rcl" deviceset="R-EU_" device="R0603" value="1.02k"/>
 <part name="U46" library="tomparts" deviceset="TLV3491" device="AIDBV"/>
 <part name="R105" library="rcl" deviceset="R-EU_" device="R0603" value="12.4k"/>
-<part name="R104" library="rcl" deviceset="R-EU_" device="R0603" value="1.24"/>
-<part name="R106" library="rcl" deviceset="R-EU_" device="R0603" value="15k"/>
+<part name="R104" library="rcl" deviceset="R-EU_" device="R0603" value="1.24k"/>
+<part name="R106" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="C105" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND94" library="supply1" deviceset="GND" device=""/>
 <part name="U48" library="gdp_pss_library" deviceset="FDS8858CZ" device=""/>

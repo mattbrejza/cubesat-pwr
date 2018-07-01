@@ -5468,10 +5468,10 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C98" library="rcl" package="C0603" value="100n" x="48.1965" y="54.991" smashed="yes">
 <attribute name="NAME" x="48.7553" y="53.5559" size="0.8128" layer="25" ratio="14"/>
 </element>
-<element name="R95" library="rcl" package="R0603" value="1.5k" x="44.9199" y="60.5028" smashed="yes">
+<element name="R95" library="rcl" package="R0603" value="1.45k" x="44.9199" y="60.5028" smashed="yes">
 <attribute name="NAME" x="43.9801" y="61.4426" size="0.8128" layer="25" ratio="14"/>
 </element>
-<element name="R96" library="rcl" package="R0603" value="1k" x="45.72" y="56.1721" smashed="yes" rot="R90">
+<element name="R96" library="rcl" package="R0603" value="1.02k" x="45.72" y="56.1721" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.815" y="57.2389" size="0.8128" layer="25" ratio="14" rot="R270"/>
 </element>
 <element name="R98" library="rcl" package="R0603" value="12.4k" x="52.1208" y="60.5663" smashed="yes" rot="R180">
@@ -5480,7 +5480,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="R97" library="rcl" package="R0603" value="1.24k" x="48.768" y="59.7535" smashed="yes" rot="R180">
 <attribute name="NAME" x="48.0441" y="60.6298" size="0.8128" layer="25" ratio="14" rot="R90"/>
 </element>
-<element name="R99" library="rcl" package="R0603" value="15k" x="52.6415" y="56.8706" smashed="yes" rot="R270">
+<element name="R99" library="rcl" package="R0603" value="10k" x="52.6415" y="56.8706" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.3179" y="55.7784" size="0.8128" layer="25" ratio="14" rot="R90"/>
 </element>
 <element name="U43" library="tomparts" package="SOT23-5" value="TLV3491AIDBV" x="48.7045" y="57.277" smashed="yes" rot="R90">
@@ -5585,19 +5585,19 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C105" library="rcl" package="C0603" value="100n" x="74.7395" y="72.263" smashed="yes" rot="R180">
 <attribute name="NAME" x="73.3933" y="73.1139" size="0.8128" layer="25" ratio="14"/>
 </element>
-<element name="R102" library="rcl" package="R0603" value="1.5k" x="78.9432" y="67.4751" smashed="yes" rot="R90">
+<element name="R102" library="rcl" package="R0603" value="1.45k" x="78.9432" y="67.4751" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.645" y="65.9257" size="0.8128" layer="25" ratio="14" rot="R90"/>
 </element>
-<element name="R103" library="rcl" package="R0603" value="1k" x="77.216" y="70.6755" smashed="yes" rot="R270">
+<element name="R103" library="rcl" package="R0603" value="1.02k" x="77.216" y="70.6755" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.9018" y="65.9511" size="0.8128" layer="25" ratio="14" rot="R90"/>
 </element>
 <element name="R105" library="rcl" package="R0603" value="12.4k" x="69.7992" y="67.2973" smashed="yes">
 <attribute name="NAME" x="68.2498" y="65.6717" size="0.8128" layer="25" ratio="14"/>
 </element>
-<element name="R104" library="rcl" package="R0603" value="1.24" x="73.152" y="67.2973" smashed="yes">
+<element name="R104" library="rcl" package="R0603" value="1.24k" x="73.152" y="67.2973" smashed="yes">
 <attribute name="NAME" x="71.7042" y="65.6463" size="0.8128" layer="25" ratio="14"/>
 </element>
-<element name="R106" library="rcl" package="R0603" value="15k" x="70.0913" y="70.1802" smashed="yes" rot="R90">
+<element name="R106" library="rcl" package="R0603" value="10k" x="70.0913" y="70.1802" smashed="yes" rot="R90">
 <attribute name="NAME" x="68.6181" y="71.7804" size="0.8128" layer="25" ratio="14" rot="R270"/>
 </element>
 <element name="U46" library="tomparts" package="SOT23-5" value="TLV3491AIDBV" x="74.2315" y="69.977" smashed="yes" rot="R270">
