@@ -10649,6 +10649,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="L9" library="gdp_pss_library" deviceset="MSS7341" device="" value="10uH"/>
 <part name="GND130" library="supply1" deviceset="GND" device=""/>
 <part name="TP35" library="testpad" deviceset="PTR1" device="TP09R"/>
+<part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
+<part name="R30" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 </parts>
 <sheets>
 <sheet>
@@ -14349,6 +14351,12 @@ tank capacitor</text>
 <text x="165.1" y="20.32" size="2.54" layer="97" rot="MR180">Flight MCU OCP
 (3V3_FLIGHT_MCU)
 OCP4</text>
+<text x="68.58" y="142.24" size="1.778" layer="91" rot="R180" align="center-right">100uA</text>
+<text x="68.58" y="93.98" size="1.778" layer="91" rot="R180" align="center-right">0.9uA</text>
+<text x="55.88" y="38.1" size="1.778" layer="91" rot="R180" align="center-right">100uA</text>
+<text x="121.92" y="45.72" size="1.778" layer="91" rot="R180" align="center-right">10uA</text>
+<text x="170.18" y="137.16" size="1.778" layer="91" rot="R180" align="center-right">100uA</text>
+<text x="190.5" y="119.38" size="1.778" layer="91" align="center-right">10uA</text>
 </plain>
 <instances>
 <instance part="U28" gate="G$1" x="55.88" y="30.48"/>
@@ -16513,6 +16521,14 @@ and Multiplexer</text>
 <instance part="GND103" gate="1" x="63.5" y="124.46"/>
 <instance part="GND104" gate="1" x="203.2" y="35.56"/>
 <instance part="GND105" gate="1" x="172.72" y="73.66"/>
+<instance part="R29" gate="G$1" x="111.76" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="102.87" y="34.5186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="102.87" y="32.258" size="1.778" layer="96"/>
+</instance>
+<instance part="R30" gate="G$1" x="114.3" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="105.41" y="34.5186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="105.41" y="32.258" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16813,12 +16829,28 @@ and Multiplexer</text>
 <wire x1="81.28" y1="66.04" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 <label x="81.28" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<label x="106.68" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="106.68" y1="22.86" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="27.94" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
+<junction x="114.3" y="22.86"/>
+</segment>
 </net>
 <net name="BATT_I2C_SDA" class="0">
 <segment>
 <pinref part="U49" gate="G$1" pin="10"/>
 <wire x1="78.74" y1="66.04" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
 <label x="78.74" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<label x="106.68" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="106.68" y1="25.4" x2="111.76" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="25.4" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="27.94" x2="111.76" y2="25.4" width="0.1524" layer="91"/>
+<junction x="111.76" y="25.4"/>
 </segment>
 </net>
 <net name="UVP3V3_VSENSE" class="0">
@@ -16991,6 +17023,18 @@ and Multiplexer</text>
 <pinref part="R109" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="109.22" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
 <label x="33.02" y="111.76" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="109.22" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="109.22" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="40.64" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="40.64" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="38.1" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="38.1" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
+<junction x="111.76" y="40.64"/>
+<junction x="114.3" y="40.64"/>
 </segment>
 </net>
 <net name="VBATT_VSENSE" class="0">
