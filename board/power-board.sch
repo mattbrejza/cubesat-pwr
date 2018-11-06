@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10096,12 +10095,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C99" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="C102" library="rcl" deviceset="C-EU" device="C1210" value="22u"/>
 <part name="L1" library="gdp_pss_library" deviceset="VISHAY-INDUCTOR" device="" value="2.2u"/>
-<part name="R95" library="rcl" deviceset="R-EU_" device="R0603" value="1.45k"/>
-<part name="R96" library="rcl" deviceset="R-EU_" device="R0603" value="1.02k"/>
+<part name="R95" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="R96" library="rcl" deviceset="R-EU_" device="R0603" value="10.2k"/>
 <part name="U43" library="tomparts" deviceset="TLV3491" device="AIDBV"/>
-<part name="R98" library="rcl" deviceset="R-EU_" device="R0603" value="12.4k"/>
-<part name="R97" library="rcl" deviceset="R-EU_" device="R0603" value="1.24k"/>
-<part name="R99" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R98" library="rcl" deviceset="R-EU_" device="R0603" value="124k"/>
+<part name="R97" library="rcl" deviceset="R-EU_" device="R0603" value="12.4k"/>
+<part name="R99" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="C98" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND86" library="supply1" deviceset="GND" device=""/>
 <part name="U45" library="gdp_pss_library" deviceset="FDS8858CZ" device=""/>
@@ -10148,12 +10147,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C106" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="C109" library="rcl" deviceset="C-EU" device="C1210" value="22u"/>
 <part name="L2" library="gdp_pss_library" deviceset="VISHAY-INDUCTOR" device="" value="2.2u"/>
-<part name="R102" library="rcl" deviceset="R-EU_" device="R0603" value="1.45k"/>
-<part name="R103" library="rcl" deviceset="R-EU_" device="R0603" value="1.02k"/>
+<part name="R102" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="R103" library="rcl" deviceset="R-EU_" device="R0603" value="10.2k"/>
 <part name="U46" library="tomparts" deviceset="TLV3491" device="AIDBV"/>
-<part name="R105" library="rcl" deviceset="R-EU_" device="R0603" value="12.4k"/>
-<part name="R104" library="rcl" deviceset="R-EU_" device="R0603" value="1.24k"/>
-<part name="R106" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R105" library="rcl" deviceset="R-EU_" device="R0603" value="124k"/>
+<part name="R104" library="rcl" deviceset="R-EU_" device="R0603" value="12.4k"/>
+<part name="R106" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="C105" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND94" library="supply1" deviceset="GND" device=""/>
 <part name="U48" library="gdp_pss_library" deviceset="FDS8858CZ" device=""/>
@@ -10561,8 +10560,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C138" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="GND123" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME18" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="R140" library="rcl" deviceset="R-EU_" device="R0603" value="402"/>
-<part name="R141" library="rcl" deviceset="R-EU_" device="R0603" value="402"/>
+<part name="R140" library="rcl" deviceset="R-EU_" device="R0603" value="4.02k"/>
+<part name="R141" library="rcl" deviceset="R-EU_" device="R0603" value="4.02k"/>
 <part name="FID1" library="fiducial" deviceset="FIDUCIAL" device="1X2-STOP"/>
 <part name="FID2" library="fiducial" deviceset="FIDUCIAL" device="1X2-STOP"/>
 <part name="FID3" library="fiducial" deviceset="FIDUCIAL" device="1X2-STOP"/>

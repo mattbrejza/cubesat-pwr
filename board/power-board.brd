@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="24" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mil"/>
@@ -320,7 +319,6 @@ CURRENT</text>
 <wire x1="81.4832" y1="72.3392" x2="72.7456" y2="72.3392" width="0.127" layer="22"/>
 <text x="79.248" y="85.344" size="1.4224" layer="22" font="vector" ratio="12" rot="MR0">T2C</text>
 <wire x1="78.6384" y1="9.9568" x2="78.6384" y2="9.906" width="0.127" layer="22"/>
-<wire x1="90.8304" y1="0" x2="90.8304" y2="11.3792" width="0.127" layer="22"/>
 <text x="62.1792" y="13.6144" size="0.8128" layer="21" font="vector" ratio="12" rot="R90">VBATT</text>
 <wire x1="54.4576" y1="12.5984" x2="62.992" y2="12.5984" width="0.127" layer="21"/>
 <wire x1="62.992" y1="12.5984" x2="62.992" y2="19.9136" width="0.127" layer="21"/>
@@ -5272,20 +5270,16 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="6.25mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
@@ -5466,19 +5460,19 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C98" library="rcl" package="C0603" value="100n" x="48.1965" y="54.991" smashed="yes">
 <attribute name="NAME" x="47.1297" y="53.2003" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R95" library="rcl" package="R0603" value="1.45k" x="44.9199" y="60.5028" smashed="yes">
+<element name="R95" library="rcl" package="R0603" value="20k" x="44.9199" y="60.5028" smashed="yes">
 <attribute name="NAME" x="43.9801" y="61.4426" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R96" library="rcl" package="R0603" value="1.02k" x="45.72" y="56.1721" smashed="yes" rot="R90">
+<element name="R96" library="rcl" package="R0603" value="10.2k" x="45.72" y="56.1721" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.0182" y="57.2389" size="0.8128" layer="25" font="vector" ratio="14" rot="R270"/>
 </element>
-<element name="R98" library="rcl" package="R0603" value="12.4k" x="52.1208" y="60.5663" smashed="yes" rot="R180">
+<element name="R98" library="rcl" package="R0603" value="124k" x="52.1208" y="60.5663" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.2826" y="58.9153" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R97" library="rcl" package="R0603" value="1.24k" x="48.768" y="59.7535" smashed="yes" rot="R180">
+<element name="R97" library="rcl" package="R0603" value="12.4k" x="48.768" y="59.7535" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.8094" y="61.4045" size="0.8128" layer="25" font="vector" ratio="14" rot="R180"/>
 </element>
-<element name="R99" library="rcl" package="R0603" value="10k" x="52.6415" y="56.8706" smashed="yes" rot="R270">
+<element name="R99" library="rcl" package="R0603" value="100k" x="52.6415" y="56.8706" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.3179" y="55.7784" size="0.8128" layer="25" font="vector" ratio="14" rot="R90"/>
 </element>
 <element name="U43" library="tomparts" package="SOT23-5" value="TLV3491AIDBV" x="48.7045" y="57.277" smashed="yes" rot="R90">
@@ -5583,19 +5577,19 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C105" library="rcl" package="C0603" value="100n" x="74.7395" y="72.263" smashed="yes" rot="R180">
 <attribute name="NAME" x="73.3933" y="73.1139" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R102" library="rcl" package="R0603" value="1.45k" x="78.9432" y="67.4751" smashed="yes" rot="R90">
+<element name="R102" library="rcl" package="R0603" value="20k" x="78.9432" y="67.4751" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.645" y="65.9257" size="0.8128" layer="25" font="vector" ratio="14" rot="R90"/>
 </element>
-<element name="R103" library="rcl" package="R0603" value="1.02k" x="77.216" y="70.6755" smashed="yes" rot="R270">
+<element name="R103" library="rcl" package="R0603" value="10.2k" x="77.216" y="70.6755" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.9018" y="65.9511" size="0.8128" layer="25" font="vector" ratio="14" rot="R90"/>
 </element>
-<element name="R105" library="rcl" package="R0603" value="12.4k" x="69.7992" y="67.2973" smashed="yes">
+<element name="R105" library="rcl" package="R0603" value="124k" x="69.7992" y="67.2973" smashed="yes">
 <attribute name="NAME" x="68.2498" y="65.6717" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R104" library="rcl" package="R0603" value="1.24k" x="73.152" y="67.2973" smashed="yes">
+<element name="R104" library="rcl" package="R0603" value="12.4k" x="73.152" y="67.2973" smashed="yes">
 <attribute name="NAME" x="71.7042" y="65.6463" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R106" library="rcl" package="R0603" value="10k" x="70.0913" y="70.1802" smashed="yes" rot="R90">
+<element name="R106" library="rcl" package="R0603" value="100k" x="70.0913" y="70.1802" smashed="yes" rot="R90">
 <attribute name="NAME" x="68.6181" y="71.7804" size="0.8128" layer="25" font="vector" ratio="14" rot="R270"/>
 </element>
 <element name="U46" library="tomparts" package="SOT23-5" value="TLV3491AIDBV" x="74.2315" y="69.977" smashed="yes" rot="R270">
@@ -6431,10 +6425,10 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C138" library="rcl" package="C0603" value="1u" x="26.0096" y="82.4992" smashed="yes" rot="MR90">
 <attribute name="NAME" x="26.289" y="80.6958" size="0.8128" layer="26" font="vector" ratio="14" rot="MR270"/>
 </element>
-<element name="R140" library="rcl" package="R0603" value="402" x="42.8752" y="57.912" smashed="yes" rot="R90">
+<element name="R140" library="rcl" package="R0603" value="4.02k" x="42.8752" y="57.912" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.275" y="59.563" size="0.8128" layer="25" font="vector" ratio="14" rot="R270"/>
 </element>
-<element name="R141" library="rcl" package="R0603" value="402" x="78.8416" y="70.7136" smashed="yes" rot="R90">
+<element name="R141" library="rcl" package="R0603" value="4.02k" x="78.8416" y="70.7136" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.645" y="69.469" size="0.8128" layer="25" font="vector" ratio="14" rot="R90"/>
 </element>
 <element name="U$1" library="dtb" package="UOS_LOGO_SML" value="" x="61.976" y="24.1808" rot="R90"/>
