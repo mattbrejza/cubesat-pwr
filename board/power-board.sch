@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10067,7 +10068,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R39" library="rcl" deviceset="R-EU_" device="R1206" value="50m"/>
 <part name="C34" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="U13" library="tomparts" deviceset="MCP6561" device="T-E/LT"/>
+<part name="U13" library="tomparts" deviceset="MCP6561" device="T-E/LT" value="MCP6561R"/>
 <part name="R41" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="U16" library="tomparts" deviceset="SN74LVC1G373" device="DCK"/>
 <part name="R43" library="rcl" deviceset="R-EU_" device="R0603" value="499k"/>
@@ -10095,7 +10096,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C99" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="C102" library="rcl" deviceset="C-EU" device="C1210" value="22u"/>
 <part name="L1" library="gdp_pss_library" deviceset="VISHAY-INDUCTOR" device="" value="2.2u"/>
-<part name="R95" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="R95" library="rcl" deviceset="R-EU_" device="R0603" value="14.5k"/>
 <part name="R96" library="rcl" deviceset="R-EU_" device="R0603" value="10.2k"/>
 <part name="U43" library="tomparts" deviceset="TLV3491" device="AIDBV"/>
 <part name="R98" library="rcl" deviceset="R-EU_" device="R0603" value="124k"/>
@@ -10147,7 +10148,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C106" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="C109" library="rcl" deviceset="C-EU" device="C1210" value="22u"/>
 <part name="L2" library="gdp_pss_library" deviceset="VISHAY-INDUCTOR" device="" value="2.2u"/>
-<part name="R102" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="R102" library="rcl" deviceset="R-EU_" device="R0603" value="14.5k"/>
 <part name="R103" library="rcl" deviceset="R-EU_" device="R0603" value="10.2k"/>
 <part name="U46" library="tomparts" deviceset="TLV3491" device="AIDBV"/>
 <part name="R105" library="rcl" deviceset="R-EU_" device="R0603" value="124k"/>
@@ -10180,7 +10181,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R48" library="rcl" deviceset="R-EU_" device="R1206" value="124m"/>
 <part name="C45" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
-<part name="U18" library="tomparts" deviceset="MCP6561" device="T-E/LT"/>
+<part name="U18" library="tomparts" deviceset="MCP6561" device="T-E/LT" value="MCP6561R"/>
 <part name="R50" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="U21" library="tomparts" deviceset="SN74LVC1G373" device="DCK"/>
 <part name="R52" library="rcl" deviceset="R-EU_" device="R0603" value="499k"/>
@@ -10213,7 +10214,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R57" library="rcl" deviceset="R-EU_" device="R1206" value="124m"/>
 <part name="C56" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND53" library="supply1" deviceset="GND" device=""/>
-<part name="U23" library="tomparts" deviceset="MCP6561" device="T-E/LT"/>
+<part name="U23" library="tomparts" deviceset="MCP6561" device="T-E/LT" value="MCP6561R"/>
 <part name="R59" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="U26" library="tomparts" deviceset="SN74LVC1G373" device="DCK"/>
 <part name="R61" library="rcl" deviceset="R-EU_" device="R0603" value="499k"/>
@@ -10246,7 +10247,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R66" library="rcl" deviceset="R-EU_" device="R1206" value="442m"/>
 <part name="C67" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>
-<part name="U28" library="tomparts" deviceset="MCP6561" device="T-E/LT"/>
+<part name="U28" library="tomparts" deviceset="MCP6561" device="T-E/LT" value="MCP6561R"/>
 <part name="R68" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="U31" library="tomparts" deviceset="SN74LVC1G373" device="DCK"/>
 <part name="R70" library="rcl" deviceset="R-EU_" device="R0603" value="499k"/>
@@ -10279,7 +10280,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R75" library="rcl" deviceset="R-EU_" device="R1206" value="50m"/>
 <part name="C78" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND69" library="supply1" deviceset="GND" device=""/>
-<part name="U33" library="tomparts" deviceset="MCP6561" device="T-E/LT"/>
+<part name="U33" library="tomparts" deviceset="MCP6561" device="T-E/LT" value="MCP6561R"/>
 <part name="R77" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="U36" library="tomparts" deviceset="SN74LVC1G373" device="DCK"/>
 <part name="R79" library="rcl" deviceset="R-EU_" device="R0603" value="499k"/>
@@ -10312,7 +10313,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R84" library="rcl" deviceset="R-EU_" device="R1206" value="124m"/>
 <part name="C89" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND77" library="supply1" deviceset="GND" device=""/>
-<part name="U38" library="tomparts" deviceset="MCP6561" device="T-E/LT"/>
+<part name="U38" library="tomparts" deviceset="MCP6561" device="T-E/LT" value="MCP6561R"/>
 <part name="R86" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="U41" library="tomparts" deviceset="SN74LVC1G373" device="DCK"/>
 <part name="R88" library="rcl" deviceset="R-EU_" device="R0603" value="499k"/>

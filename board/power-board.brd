@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="24" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="5" fill="5" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="5" fill="5" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -29,15 +30,15 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -5270,16 +5271,20 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="6.25mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
@@ -5388,7 +5393,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C34" library="rcl" package="C0603" value="100n" x="67.818" y="18.6055" smashed="yes" rot="MR0">
 <attribute name="NAME" x="68.453" y="19.4945" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="U13" library="tomparts" package="SOT23-5" value="MCP6561T-E/LT" x="39.37" y="16.0655" smashed="yes" rot="MR0">
+<element name="U13" library="tomparts" package="SOT23-5" value="MCP6561R" x="39.37" y="16.0655" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.5765" y="18.415" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="R41" library="rcl" package="R0603" value="1k" x="39.37" y="12.6365" smashed="yes" rot="MR180">
@@ -5460,7 +5465,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C98" library="rcl" package="C0603" value="100n" x="48.1965" y="54.991" smashed="yes">
 <attribute name="NAME" x="47.1297" y="53.2003" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R95" library="rcl" package="R0603" value="20k" x="44.9199" y="60.5028" smashed="yes">
+<element name="R95" library="rcl" package="R0603" value="14.5k" x="44.9199" y="60.5028" smashed="yes">
 <attribute name="NAME" x="43.9801" y="61.4426" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
 <element name="R96" library="rcl" package="R0603" value="10.2k" x="45.72" y="56.1721" smashed="yes" rot="R90">
@@ -5577,7 +5582,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C105" library="rcl" package="C0603" value="100n" x="74.7395" y="72.263" smashed="yes" rot="R180">
 <attribute name="NAME" x="73.3933" y="73.1139" size="0.8128" layer="25" font="vector" ratio="14"/>
 </element>
-<element name="R102" library="rcl" package="R0603" value="20k" x="78.9432" y="67.4751" smashed="yes" rot="R90">
+<element name="R102" library="rcl" package="R0603" value="14.5k" x="78.9432" y="67.4751" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.645" y="65.9257" size="0.8128" layer="25" font="vector" ratio="14" rot="R90"/>
 </element>
 <element name="R103" library="rcl" package="R0603" value="10.2k" x="77.216" y="70.6755" smashed="yes" rot="R270">
@@ -5628,7 +5633,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C45" library="rcl" package="C0603" value="100n" x="67.818" y="28.3083" smashed="yes" rot="MR0">
 <attribute name="NAME" x="68.453" y="29.1973" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="U18" library="tomparts" package="SOT23-5" value="MCP6561T-E/LT" x="39.37" y="25.9715" smashed="yes" rot="MR0">
+<element name="U18" library="tomparts" package="SOT23-5" value="MCP6561R" x="39.37" y="25.9715" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.5765" y="28.321" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="R50" library="rcl" package="R0603" value="1k" x="39.37" y="22.5425" smashed="yes" rot="MR180">
@@ -5703,7 +5708,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C56" library="rcl" package="C0603" value="100n" x="67.818" y="38.4175" smashed="yes" rot="MR0">
 <attribute name="NAME" x="68.0466" y="39.3065" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="U23" library="tomparts" package="SOT23-5" value="MCP6561T-E/LT" x="39.37" y="35.8775" smashed="yes" rot="MR0">
+<element name="U23" library="tomparts" package="SOT23-5" value="MCP6561R" x="39.37" y="35.8775" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.5765" y="38.227" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="R59" library="rcl" package="R0603" value="1k" x="39.37" y="32.4485" smashed="yes" rot="MR180">
@@ -5778,7 +5783,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C67" library="rcl" package="C0603" value="100n" x="67.818" y="48.6283" smashed="yes" rot="MR0">
 <attribute name="NAME" x="68.453" y="49.5173" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="U28" library="tomparts" package="SOT23-5" value="MCP6561T-E/LT" x="39.37" y="45.7835" smashed="yes" rot="MR0">
+<element name="U28" library="tomparts" package="SOT23-5" value="MCP6561R" x="39.37" y="45.7835" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.5765" y="48.133" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="R68" library="rcl" package="R0603" value="1k" x="39.37" y="42.3545" smashed="yes" rot="MR180">
@@ -5853,7 +5858,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C78" library="rcl" package="C0603" value="100n" x="67.5132" y="58.2295" smashed="yes" rot="MR0">
 <attribute name="NAME" x="68.1482" y="59.1185" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="U33" library="tomparts" package="SOT23-5" value="MCP6561T-E/LT" x="39.37" y="55.6895" smashed="yes" rot="MR0">
+<element name="U33" library="tomparts" package="SOT23-5" value="MCP6561R" x="39.37" y="55.6895" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.5765" y="58.039" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="R77" library="rcl" package="R0603" value="1k" x="39.37" y="52.2605" smashed="yes" rot="MR180">
@@ -5928,7 +5933,7 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <element name="C89" library="rcl" package="C0603" value="100n" x="67.818" y="68.1355" smashed="yes" rot="MR0">
 <attribute name="NAME" x="68.453" y="69.0245" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="U38" library="tomparts" package="SOT23-5" value="MCP6561T-E/LT" x="39.37" y="65.5955" smashed="yes" rot="MR0">
+<element name="U38" library="tomparts" package="SOT23-5" value="MCP6561R" x="39.37" y="65.5955" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.5765" y="67.945" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="R86" library="rcl" package="R0603" value="1k" x="39.37" y="62.1665" smashed="yes" rot="MR180">
